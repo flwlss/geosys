@@ -1,0 +1,128 @@
+@import "../../assets/styles/mixins.scss";
+
+.wrapper {
+  background-color: rgba(23, 95, 95, 0.45);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  @include responsive-size(padding-left, 16px, 60px, 60px, 60px, 100px);
+  @include responsive-size(padding-right, 16px, 60px, 60px, 60px, 100px);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    @include responsive-size(width, 100px, 150px, 150px, 150px, 150px);
+    @include responsive-size(height, 47px, 70px, 70px, 70px, 70px);
+    display: flex;
+    cursor: pointer;
+  }
+
+  &__itemsWrapper {
+    display: flex;
+    align-self: flex-end;
+  }
+
+  &__items {
+    display: flex;
+
+    p {
+      text-align: center;
+      margin-right: 24px;
+      cursor: pointer;
+
+      &:last-child {
+        margin-right: 60px;
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    position: relative;
+
+    &__request {
+      display: flex;
+
+      svg {
+        position: absolute;
+        bottom: 0;
+      }
+
+      p {
+        margin-left: 20px;
+        z-index: 1;
+        cursor: pointer;
+      }
+    }
+
+    &__menu {
+      margin-left: 80px;
+      text-transform: uppercase;
+      cursor: pointer;
+      display: none;
+    }
+  }
+
+  &__underMenu {
+    margin-top: 50px;
+    justify-content: center;
+    display: none;
+
+    p {
+      margin-right: 24px;
+      text-align: center;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .navbar {
+    &__itemsWrapper {
+      align-self: center;
+    }
+
+    &__items {
+      display: none;
+    }
+
+    &__actions {
+      height: 60px;
+      align-items: center;
+
+      &__menu {
+        display: block;
+      }
+    }
+
+    &__underMenu {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .navbar {
+    &__underMenu {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    &__actions {
+      height: auto;
+
+      &__request {
+        display: none;
+      }
+    }
+  }
+}

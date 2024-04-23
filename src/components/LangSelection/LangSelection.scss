@@ -1,0 +1,45 @@
+.langSelection {
+  position: relative;
+  margin-right: 47px;
+  min-width: 43px;
+
+  &__lang {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    p {
+      margin-right: 7px;
+    }
+  }
+
+  &__menu {
+    cursor: default;
+    padding: 24px;
+    background-color: #175f5f;
+    position: absolute;
+    top: 100%;
+    right: -7px;
+
+    p {
+      margin-bottom: 13px;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+        text-decoration-color: #d11e12;
+        text-underline-offset: 8px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .langSelection {
+    display: none;
+  }
+}

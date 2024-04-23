@@ -1,0 +1,36 @@
+@import "../../assets/styles/mixins.scss";
+
+.page {
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/mainPageBg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: auto;
+
+  &__content {
+    position: absolute;
+    @include responsive-size(bottom, 83px, 290px, 112px, 144px, 325px);
+    @include responsive-size(padding-left, 16px, 60px, 60px, 60px, 100px);
+    @include responsive-size(padding-right, 16px, 60px, 60px, 60px, 100px);
+    width: 1050px;
+
+    p {
+      @include responsive-size(font-size, 24px, 32px, 32px, 32px, 32px);
+
+      span {
+        font-family: "Montserrat Bold";
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .page {
+    &__content {
+      width: 100%;
+    }
+  }
+}

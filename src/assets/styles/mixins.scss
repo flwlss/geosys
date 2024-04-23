@@ -1,0 +1,33 @@
+$fullHD: 1920px;
+$desktop: 1440px;
+$tablet: 1024px;
+$mobile: 768px;
+$small-mobile: 390px;
+
+@mixin responsive-size($property, $values...) {
+  $breakpoints: $small-mobile, $mobile, $tablet, $desktop, $fullHD;
+  $num-values: length($values);
+  $range: $fullHD - $small-mobile;
+
+  @for $i from 1 through $num-values {
+    $value: nth($values, $i);
+
+    @if $i < $num-values {
+      $next-value: nth($values, $i + 1);
+      $next-breakpoint: nth($breakpoints, $i + 1);
+      $increment: calc(($next-value - $value) / ($next-breakpoint - nth($breakpoints, $i)));
+
+      @if $i == 1 {
+        @media only screen and (max-width: $small-mobile) {
+          #{$property}: $value;
+        }
+      }
+
+      @media only screen and (min-width: nth($breakpoints, $i)) and (max-width: $next-breakpoint - 1) {
+        #{$property}: calc(#{$value} + #{$increment} * (100vw - #{nth($breakpoints, $i)}));
+      }
+    } @else {
+      #{$property}: $value;
+    }
+  }
+}
