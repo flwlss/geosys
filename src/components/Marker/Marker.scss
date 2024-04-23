@@ -1,0 +1,12 @@
+@import "../../assets/styles/mixins.scss";
+
+.marker {
+  background-color: rgba(209, 30, 18, 0.5);
+  display: inline-block;
+  padding: 10px 50px 10px 0;
+  @include responsive-size(padding-left, 16px, 60px, 60px, 60px, 100px);
+
+  p {
+    @include responsive-size(font-size, 24px, 32px, 32px, 32px, 32px);
+  }
+}
