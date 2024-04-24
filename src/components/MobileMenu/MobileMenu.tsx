@@ -33,7 +33,11 @@ const MobileMenu = ({ closeModal }: MobileMenuProps) => {
             О нас
           </p>
           <p>Геофизика</p>
-          <p>
+          <p
+            onClick={() => {
+              navigate(PATHS.SPECIAL_EQUIPMENT);
+            }}
+          >
             Поставка аэродромной
             <br />
             противопожарной

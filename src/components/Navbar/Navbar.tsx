@@ -33,7 +33,11 @@ const Navbar = () => {
               О нас
             </p>
             <p>Геофизика</p>
-            <p>
+            <p
+              onClick={() => {
+                navigate(PATHS.SPECIAL_EQUIPMENT);
+              }}
+            >
               Поставка аэродромной противопожарной
               <br />
               спецтехники NAFFCO
@@ -71,7 +75,11 @@ const Navbar = () => {
             О нас
           </p>
           <p>Геофизика</p>
-          <p>
+          <p
+            onClick={() => {
+              navigate(PATHS.SPECIAL_EQUIPMENT);
+            }}
+          >
             Поставка аэродромной противопожарной
             <br />
             спецтехники NAFFCO
