@@ -7,8 +7,12 @@ import Arrow from "/src/assets/images/icons/arrow.svg?react";
 import Checkmark from "/src/assets/images/icons/checkmark.svg?react";
 import Settings from "/src/assets/images/icons/settings.svg?react";
 import Edu from "/src/assets/images/icons/edu.svg?react";
+import { useNavigate } from "react-router-dom";
+import { PATHS } from "../../navigation/paths";
 
 const SpecialEquipment = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="specialEquipment">
       <Container>
@@ -32,8 +36,15 @@ const SpecialEquipment = () => {
               <div className="specialEquipment__leftContent__flagWrapper">
                 <div className="specialEquipment__leftContent__flag">
                   <Rectangle className="specialEquipment__leftContent__rectangle" />
-                  <p>К спецтехнике</p>
-                  <Arrow className="specialEquipment__leftContent__arrow" />
+                  <div
+                    onClick={() => {
+                      navigate(PATHS.EQUIPMENT);
+                    }}
+                    className="specialEquipment__leftContent__rectangle__btn"
+                  >
+                    <p>К спецтехнике</p>
+                    <Arrow className="specialEquipment__leftContent__arrow" />
+                  </div>
                 </div>
               </div>
             </div>

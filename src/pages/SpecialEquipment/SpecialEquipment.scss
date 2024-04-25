@@ -65,6 +65,11 @@
 
     &__rectangle {
       position: absolute;
+
+      &__btn {
+        display: flex;
+        cursor: pointer;
+      }
     }
   }
 
