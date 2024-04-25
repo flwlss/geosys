@@ -1,0 +1,100 @@
+@import "../../assets/styles/mixins.scss";
+
+.wrapper {
+  &__rectangle {
+    width: 850px;
+    height: 200px;
+    background-color: rgba(209, 30, 18, 0.5);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+  }
+}
+
+.slide {
+  display: flex;
+  @include responsive-size(padding-left, 16px, 60px, 60px, 60px, 100px);
+  @include responsive-size(padding-right, 16px, 60px, 60px, 60px, 100px);
+
+  &__header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 700px;
+    margin-top: 20px;
+    margin-right: 170px;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    @include responsive-size(font-size, 14px, 16px, 16px, 16px, 16px);
+  }
+
+  &__name {
+    @include responsive-size(font-size, 26px, 32px, 32px, 32px, 32px);
+    margin-top: 8px;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    &__prevBtn {
+      width: 44px;
+      height: 44px;
+      border: 1px solid #ffffff;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    &__nextBtn {
+      @extend .slide__buttons__prevBtn;
+
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__rightContent {
+    width: 415px;
+    &__item {
+      display: flex;
+      align-items: center;
+      width: 415px;
+      justify-content: space-between;
+      cursor: pointer;
+
+      p {
+        font-size: 18px;
+        text-transform: uppercase;
+      }
+    }
+
+    &__line {
+      width: 100%;
+      height: 1px;
+      background-color: #989898;
+      margin: 16px 0;
+    }
+
+    &__characteristics {
+      margin-top: 16px;
+
+      &__title {
+        font-family: "Montserrat Bold";
+        text-transform: uppercase;
+        margin-bottom: 4px;
+      }
+
+      &__subtitle {
+        font-size: 16px;
+        margin-left: 24px;
+      }
+    }
+  }
+}
