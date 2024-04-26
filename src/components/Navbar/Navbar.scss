@@ -33,6 +33,12 @@
       margin-right: 24px;
       cursor: pointer;
 
+      &:hover {
+        text-decoration: underline;
+        text-decoration-color: #d11e12;
+        text-underline-offset: 8px;
+      }
+
       &:last-child {
         margin-right: 60px;
       }
@@ -55,6 +61,13 @@
         margin-left: 20px;
         z-index: 1;
         cursor: pointer;
+        height: fit-content;
+
+        &:hover {
+          text-decoration: underline;
+          text-decoration-color: #d11e12;
+          text-underline-offset: 8px;
+        }
       }
     }
 
@@ -63,6 +76,12 @@
       text-transform: uppercase;
       cursor: pointer;
       display: none;
+
+      &:hover {
+        text-decoration: underline;
+        text-decoration-color: #d11e12;
+        text-underline-offset: 8px;
+      }
     }
   }
 
@@ -74,6 +93,13 @@
     p {
       margin-right: 24px;
       text-align: center;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+        text-decoration-color: #d11e12;
+        text-underline-offset: 8px;
+      }
 
       &:last-child {
         margin-right: 0;

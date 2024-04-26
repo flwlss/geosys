@@ -39,17 +39,7 @@
   }
 
   &__lang {
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-
-    p {
-      cursor: pointer;
-
-      &:first-child {
-        margin-right: 40px;
-      }
-    }
+    display: none;
   }
 }
 
@@ -58,7 +48,17 @@
     width: 100%;
 
     &__lang {
-      display: none;
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+
+      p {
+        cursor: pointer;
+
+        &:first-child {
+          margin-right: 40px;
+        }
+      }
     }
   }
 }

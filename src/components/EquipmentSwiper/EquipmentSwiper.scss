@@ -2,6 +2,7 @@
 
 .wrapper {
   &__rectangle {
+    @include responsive-size(width, 0px, 0px, 458px, 610px, 850px);
     width: 850px;
     height: 200px;
     background-color: rgba(209, 30, 18, 0.5);
@@ -20,9 +21,8 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    width: 700px;
+    @include responsive-size(width, 0px, 0px, 374px, 500px, 700px);
     margin-top: 20px;
-    margin-right: 170px;
     margin-bottom: 24px;
   }
 
@@ -60,8 +60,26 @@
     }
   }
 
+  &__photo {
+    @include responsive-size(width, 0px, 0px, 398px, 550px, 750px);
+    @include responsive-size(height, 250px, 405px, 239px, 365px, 450px);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__btn {
+    width: 250px;
+    margin: 0 auto;
+  }
+
   &__rightContent {
     width: 415px;
+    @include responsive-size(margin-left, 26px, 32px, 64px, 120px, 120px);
+
     &__item {
       display: flex;
       align-items: center;
@@ -94,6 +112,89 @@
       &__subtitle {
         font-size: 16px;
         margin-left: 24px;
+      }
+    }
+
+    &__specifications {
+      display: flex;
+      align-items: center;
+      margin-top: 16px;
+
+      &__title {
+        min-width: 220px;
+        width: 220px;
+        font-size: 16px;
+        color: #989898;
+        margin-right: 10px;
+      }
+
+      &__value {
+        font-size: 16px;
+      }
+
+      &__note {
+        font-size: 16px;
+        margin-top: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .wrapper {
+    &__rectangle {
+      width: calc(100% - 60px);
+    }
+  }
+
+  .slide {
+    flex-direction: column;
+
+    &__header {
+      width: 100%;
+      padding-right: 24px;
+    }
+
+    &__photo {
+      width: 100%;
+    }
+
+    &__rightContent {
+      margin-left: 0;
+      width: 100%;
+      margin-top: 80px;
+
+      &__item {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    &__rectangle {
+      width: 100%;
+    }
+  }
+
+  .slide {
+    flex-direction: column;
+
+    &__rightContent {
+      margin-left: 0;
+      width: 100%;
+      margin-top: 80px;
+
+      &__item {
+        width: 100%;
+      }
+
+      &__specifications {
+        &__title {
+          min-width: 190px;
+          width: 190px;
+        }
       }
     }
   }

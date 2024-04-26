@@ -2,6 +2,8 @@ import Arrow from "/src/assets/images/icons/secondArrow.svg?react";
 import Plus from "/src/assets/images/icons/plus.svg?react";
 import Minus from "/src/assets/images/icons/minus.svg?react";
 import { useState } from "react";
+import Equipment from "../../assets/images/equipment.jpg";
+import Button from "../Button/Button";
 
 type SlideProps = {
   item: any;
@@ -9,6 +11,7 @@ type SlideProps = {
 
 const Slide = ({ item }: SlideProps) => {
   const [showCharacteristics, setShowCharacteristics] = useState(false);
+  const [showSpecifications, setShowSpecifications] = useState(false);
 
   return (
     <div>
@@ -35,7 +38,13 @@ const Slide = ({ item }: SlideProps) => {
               </div>
             </div>
           </div>
-          <p>photos</p>
+          <div className="slide__photo">
+            <img src={Equipment} alt="" />
+          </div>
+          <p>pagination</p>
+          <div className="slide__btn">
+            <Button onClick={() => {}} text="Заказать" />
+          </div>
         </div>
         <div className="slide__rightContent">
           <div>
@@ -76,9 +85,40 @@ const Slide = ({ item }: SlideProps) => {
             )}
           </div>
           <div className="slide__rightContent__line" />
-          <div className="slide__rightContent__item">
-            <p>Спецификации</p>
-            <Plus />
+          <div>
+            <div
+              onClick={() => {
+                setShowSpecifications(!showSpecifications);
+              }}
+              className="slide__rightContent__item"
+            >
+              <p>Спецификации</p>
+              {showSpecifications ? <Minus /> : <Plus />}
+            </div>
+            {showSpecifications && (
+              <div>
+                <div>
+                  {item.specifications.map((item: any, index: number) => {
+                    return (
+                      <div
+                        key={index}
+                        className="slide__rightContent__specifications"
+                      >
+                        <p className="slide__rightContent__specifications__title">
+                          {item.title}
+                        </p>
+                        <p className="slide__rightContent__specifications__value">
+                          {item.value}
+                        </p>
+                      </div>
+                    );
+                  })}
+                </div>
+                <p className="slide__rightContent__specifications__note">
+                  {item.note}
+                </p>
+              </div>
+            )}
           </div>
         </div>
       </div>

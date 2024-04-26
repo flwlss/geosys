@@ -8,6 +8,12 @@
     align-items: center;
     cursor: pointer;
 
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: #d11e12;
+      text-underline-offset: 8px;
+    }
+
     p {
       margin-right: 7px;
     }
