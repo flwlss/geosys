@@ -1,0 +1,12 @@
+{
+  "contacts": {
+    "send": "Send",
+    "phone": "+7 (495) 744-0107 (add.118)",
+    "request": "Submit your request and we will call you back!",
+    "requestModal": "Submit your request \n and we will call you back!",
+    "name": "Name",
+    "email": "Email",
+    "phoneTitle": "Phone",
+    "message": "Text"
+  }
+}

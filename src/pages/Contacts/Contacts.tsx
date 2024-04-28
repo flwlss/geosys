@@ -1,0 +1,90 @@
+import Container from '../../components/Container/Container';
+import geoDot from '../../assets/images/icons/geoDot.svg';
+import Rectangle2 from '/src/assets/images/icons/rectangle2.svg?react';
+import email from '../../assets/images/icons/email.svg';
+import phone from '../../assets/images/icons/phone.svg';
+import Arrow from '/src/assets/images/icons/arrow.svg?react';
+import './Contacts.scss';
+import Input from '../../components/Input/Input';
+import { useTranslation } from 'react-i18next';
+
+const Contacts = () => {
+  const width = window.innerWidth;
+
+  const { t } = useTranslation();
+
+  return (
+    <Container>
+      <div className="contacts">
+        <div className="contactInfoWrapper">
+          <div className="title">Контакты </div>
+          <div className="contactInfoContent">
+            <div className="contactItem">
+              <img src={geoDot} alt="" />
+              RA07AA08, Jebel Ali Freezone, Dubai, United Arab Emirates
+            </div>
+            <div className="contactItem">
+              <img src={email} alt="" />
+              info@geosys-uae.com
+            </div>
+            <div className="contactItem">
+              <img src={phone} alt="" />
+              {t('contacts.phone')}
+            </div>
+          </div>
+        </div>
+        <div className="sendWrapper">
+          <div className="title">{t('contacts.request')}</div>
+          <div className="inputsWrapper">
+            <Input
+              maxWidth={width > 900 ? '300px' : ''}
+              alignItems="center"
+              textarea={false}
+              placeholder={t('contacts.name')}
+            />
+            <Input
+              maxWidth={width > 900 ? '300px' : ''}
+              type="text"
+              alignItems="center"
+              textarea={false}
+              placeholder={t('contacts.email')}
+            />
+            <Input
+              maxWidth={width > 900 ? '300px' : ''}
+              type="number"
+              alignItems="center"
+              textarea={false}
+              placeholder={t('contacts.phoneTitle')}
+            />
+            <div
+              className="lastElement"
+              style={{ display: 'flex', gap: '17px' }}
+            >
+              <Input
+                maxWidth={width > 900 ? '620px' : ''}
+                labelHeight="75px"
+                alignItems="flex-start"
+                textarea={true}
+                placeholder={t('contacts.message')}
+              />
+              {width > 560 ? (
+                <div className="buttonWrapper">
+                  <Rectangle2 className="rectangle" />
+                  <div className="button">
+                    {t('contacts.send')} <Arrow />
+                  </div>
+                </div>
+              ) : (
+                <button className="mobileButton">
+                  {t('contacts.send')} <Arrow />
+                </button>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </Container>
+  );
+};
+
+export default Contacts;

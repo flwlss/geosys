@@ -2,8 +2,6 @@ import Container from '../../components/Container/Container';
 import './MainPage.scss';
 
 const MainPage = () => {
-  console.log('test');
-
   return (
     <div className="page">
       <Container>

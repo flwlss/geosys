@@ -1,19 +1,23 @@
-import "./Navbar.scss";
-import Logo from "../../assets/images/logo.svg";
-import LangSelection from "../LangSelection/LangSelection";
-import Rectangle from "/src/assets/images/icons/rectangle.svg?react";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { PATHS } from "../../navigation/paths";
-import MobileMenu from "../MobileMenu/MobileMenu";
+import './Navbar.scss';
+import Logo from '../../assets/images/logo.svg';
+import LangSelection from '../LangSelection/LangSelection';
+import Rectangle from '/src/assets/images/icons/rectangle.svg?react';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { PATHS } from '../../navigation/paths';
+import MobileMenu from '../MobileMenu/MobileMenu';
+import { useModal } from '../../common/helpers';
+import Modal from '../Modal/Modal';
 
 const Navbar = () => {
   const [showUnderMenu, setShowUnderMenu] = useState(false);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const navigate = useNavigate();
+  const { isOpen, openModal, closeModal } = useModal();
 
   return (
     <nav className="wrapper">
+      {isOpen && <Modal closeModal={closeModal} />}
       <div className="navbar">
         <img
           onClick={() => {
@@ -42,13 +46,19 @@ const Navbar = () => {
               <br />
               спецтехники NAFFCO
             </p>
-            <p>Контакты</p>
+            <p
+              onClick={() => {
+                navigate(PATHS.CONTACTS);
+              }}
+            >
+              Контакты
+            </p>
           </div>
           <div className="navbar__actions">
             <LangSelection />
             <div className="navbar__actions__request">
               <Rectangle />
-              <p>Оставить заявку</p>
+              <p onClick={openModal}>Оставить заявку</p>
             </div>
             <p
               onClick={() => {

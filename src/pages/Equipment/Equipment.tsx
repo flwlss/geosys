@@ -1,9 +1,9 @@
-import { useNavigate } from "react-router-dom";
-import Container from "../../components/Container/Container";
-import "./Equipment.scss";
-import Arrow from "/src/assets/images/icons/secondArrow.svg?react";
-import { PATHS } from "../../navigation/paths";
-import EquipmentSwiper from "../../components/EquipmentSwiper/EquipmentSwiper";
+import { useNavigate } from 'react-router-dom';
+import Container from '../../components/Container/Container';
+import './Equipment.scss';
+import Arrow from '/src/assets/images/icons/secondArrow.svg?react';
+import { PATHS } from '../../navigation/paths';
+import EquipmentSwiper from '../../components/EquipmentSwiper/EquipmentSwiper';
 
 const Equipment = () => {
   const navigate = useNavigate();
