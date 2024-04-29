@@ -1,9 +1,9 @@
-@import "../../assets/styles/mixins.scss";
+@import '../../assets/styles/mixins.scss';
 
 .about {
   width: 100%;
   height: 100%;
-  background-image: url("/images/mainPageBg.jpg");
+  background-image: url('/images/mainPageBg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,6 +41,7 @@
     &__rightText {
       @include responsive-size(font-size, 16px, 18px, 18px, 18px, 18px);
       width: 633px;
+      white-space: pre-wrap;
     }
   }
 }

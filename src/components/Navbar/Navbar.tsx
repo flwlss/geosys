@@ -8,12 +8,14 @@ import { PATHS } from '../../navigation/paths';
 import MobileMenu from '../MobileMenu/MobileMenu';
 import { useModal } from '../../common/helpers';
 import Modal from '../Modal/Modal';
+import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
   const [showUnderMenu, setShowUnderMenu] = useState(false);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const navigate = useNavigate();
   const { isOpen, openModal, closeModal } = useModal();
+  const { t } = useTranslation();
 
   return (
     <nav className="wrapper">
@@ -34,31 +36,29 @@ const Navbar = () => {
                 navigate(PATHS.ABOUT);
               }}
             >
-              О нас
+              {t('navbar.about')}
             </p>
-            <p>Геофизика</p>
+            <p>{t('navbar.geophysics')}</p>
             <p
               onClick={() => {
                 navigate(PATHS.SPECIAL_EQUIPMENT);
               }}
             >
-              Поставка аэродромной противопожарной
-              <br />
-              спецтехники NAFFCO
+              {t('navbar.supply')}
             </p>
             <p
               onClick={() => {
                 navigate(PATHS.CONTACTS);
               }}
             >
-              Контакты
+              {t('navbar.contacts')}
             </p>
           </div>
           <div className="navbar__actions">
             <LangSelection />
             <div className="navbar__actions__request">
               <Rectangle />
-              <p onClick={openModal}>Оставить заявку</p>
+              <p onClick={openModal}>{t('navbar.request')}</p>
             </div>
             <p
               onClick={() => {
@@ -70,7 +70,7 @@ const Navbar = () => {
               }}
               className="navbar__actions__menu"
             >
-              меню
+              {t('navbar.menu')}
             </p>
           </div>
         </div>
@@ -82,24 +82,22 @@ const Navbar = () => {
               navigate(PATHS.ABOUT);
             }}
           >
-            О нас
+            {t('navbar.about')}
           </p>
-          <p>Геофизика</p>
+          <p>{t('navbar.geophysics')}</p>
           <p
             onClick={() => {
               navigate(PATHS.SPECIAL_EQUIPMENT);
             }}
           >
-            Поставка аэродромной противопожарной
-            <br />
-            спецтехники NAFFCO
+            {t('navbar.supply')}
           </p>
-          <p>Контакты</p>
+          <p>{t('navbar.contacts')}</p>
         </div>
       )}
       {showMobileMenu && (
         <MobileMenu
-          closeModal={() => {
+          closeMenu={() => {
             setShowMobileMenu(false);
           }}
         />

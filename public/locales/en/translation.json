@@ -8,5 +8,36 @@
     "email": "Email",
     "phoneTitle": "Phone",
     "message": "Text"
+  },
+  "navbar": {
+    "main": "Main",
+    "about": "About Us",
+    "geophysics": "Geophysics",
+    "supply": "Delivery of NAFFCO\nairfield firefighting equipment",
+    "contacts": "Contact",
+    "request": "Submit your request",
+    "menu": "Menu"
+  },
+  "mainPage": {
+    "company": "",
+    "text": "is among the leading manufacturers of measuring and logging trucks, geophysical equipment and special purpose vehicles"
+  },
+  "aboutPage": {
+    "startLeftText": "The German company",
+    "endLeftText": "was established in 1990 in Leipzig, formerly a subsidiary of VEB Geophysik Leipzig, the largest company implementing geophysical methods of mineral exploration in Germany. Thus, the establishment of Geo Sys allowed for the continuation of Leipzig's longstanding tradition of geophysical instrumentation manufacturing.",
+    "rightText": "The company specializes in manufacturing logging trucks, marine containers, geophysical measuring devices, modular logging units, and is steadily expanding its market presence. Thanks to its long experience, Geo Sys brand has become well-known in Central and Eastern Europe, Central Asia, and the Middle East.\n\nNowadays, Geo Sys products are deservedly considered a standard of quality and are associated with uniqueness, expertise, and technological innovation in the production of machinery, equipment, and devices for the oil and gas industry.\n\nIn January 2024, Geo Sys Germany identified its successor — Geo Sys Middle East, granting it the exclusive rights to manufacture and sell logging trucks and modular logging units. Currently, industrial manufacture is concentrated in Dubai, United Arab Emirates."
+  },
+  "specialEquipmentPage": {
+    "title": "Delivery of NAFFCO equipment",
+    "text": "Geo Sys Middle East is an authorized dealer of NAFFCO FZCO, a global leader in the manufacture and distribution of advanced firefighting equipment from the United Arab Emirates.",
+    "subtext": "We sell airfield firefighting equipment and focus on supplying it to airports across Central Europe and the CIS countries.",
+    "toEquipment": "See all equipment",
+    "howWeWorks": "What is our work process?",
+    "text1": "As representatives of a globally recognized manufacturer, we ensure the high quality and reliability of the airfield firefighting equipment we deliver",
+    "text2": "We deliver special equipment in various configurations, tailored to the unique requirements of the customers",
+    "text3": "We provide training for the customer's staff on how to operate the special equipment",
+    "text4": "We promise a considerate approach to the customer at every stage, from the time of order placement to delivery and commissioning of the special equipment",
+    "text5": "We supply special equipment in a comprehensive manner, encompassing customs formalities, delivery, and commissioning",
+    "text6": "We carry out maintenance and repair of the special equipment at the manufacturer's site"
   }
 }

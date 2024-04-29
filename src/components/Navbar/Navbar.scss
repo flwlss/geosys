@@ -1,4 +1,4 @@
-@import "../../assets/styles/mixins.scss";
+@import '../../assets/styles/mixins.scss';
 
 .wrapper {
   background-color: rgba(23, 95, 95, 0.45);
@@ -32,6 +32,7 @@
       text-align: center;
       margin-right: 24px;
       cursor: pointer;
+      white-space: pre-wrap;
 
       &:hover {
         text-decoration: underline;
@@ -94,6 +95,7 @@
       margin-right: 24px;
       text-align: center;
       cursor: pointer;
+      white-space: pre-wrap;
 
       &:hover {
         text-decoration: underline;

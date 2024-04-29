@@ -1,44 +1,25 @@
-import Container from "../../components/Container/Container";
-import Marker from "../../components/Marker/Marker";
-import "./AboutPage.scss";
+import { useTranslation } from 'react-i18next';
+import Container from '../../components/Container/Container';
+import Marker from '../../components/Marker/Marker';
+import './AboutPage.scss';
 // import Number2 from "/src/assets/images/icons/number2.svg?react";
 
 const AboutPage = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="about">
       <Container>
         <div className="about__content">
           {/* <Number2 className="about__content__number" /> */}
-          <Marker title="О нас" />
+          <Marker title={t('navbar.about')} />
           <div className="about__textWrapper">
             <p className="about__textWrapper__leftText">
-              Немецкая компания <span>Geo Sys</span> была основана в 1990 году в
-              городе Лейпциг и являлась филиалом VEB Geophysik Leipzig –
-              крупнейшей компании по геофизическим методам разведки
-              месторождений полезных ископаемых на территории Германии. Таким
-              образом, основание компании Geo Sys позволило продолжить
-              многолетнюю традицию геофизического приборостроения в Лейпциге.
+              {t('aboutPage.startLeftText')} <span>Geo Sys</span>{' '}
+              {t('aboutPage.endLeftText')}
             </p>
             <p className="about__textWrapper__rightText">
-              Компания специализируется на производстве каротажных подъёмников,
-              морских контейнеров, геофизических измерительных приборов,
-              модульных каротажных блоков и уверенно расширяет на рынке
-              географию своего присутствия. Благодаря многолетнему опыту, бренд
-              Geo Sys приобрел известность на территориях Центральной и
-              Восточной Европы, Средней Азии и на Ближнем Востоке.
-              <br />
-              <br />
-              Сегодня продукция Geo Sys заслуженно является стандартом качества
-              и ассоциируется с уникальностью, компетентностью, технологическими
-              инновациями в сфере производства техники, оборудования и приборов
-              для нефтяной и нефтегазовой отрасли.
-              <br />
-              <br />С января 2024 г. немецкая компания Geo Sys определила
-              правопреемника - компанию Geo Sys Middle East, передав ей
-              исключительное право на производство и реализацию каротажных
-              подъемников и модульных каротажных блоков. На сегодняшний день
-              промышленное производство сосредоточено в Дубае на территории
-              Объединённых Арабских Эмиратов.
+              {t('aboutPage.rightText')}
             </p>
           </div>
         </div>
