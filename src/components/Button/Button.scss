@@ -6,4 +6,9 @@ button {
   outline: none;
   color: #ffffff;
   cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #be180d;
+  }
 }

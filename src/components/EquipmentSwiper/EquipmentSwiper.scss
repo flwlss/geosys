@@ -1,4 +1,4 @@
-@import "../../assets/styles/mixins.scss";
+@import '../../assets/styles/mixins.scss';
 
 .wrapper {
   &__rectangle {
@@ -62,11 +62,12 @@
 
   &__photo {
     @include responsive-size(width, 0px, 0px, 398px, 550px, 750px);
-    @include responsive-size(height, 250px, 405px, 239px, 365px, 450px);
+    @include responsive-size(height, 267px, 431px, 265px, 365px, 476px);
+    margin-bottom: 24px;
 
     img {
       width: 100%;
-      height: 100%;
+      @include responsive-size(height, 250px, 405px, 239px, 339px, 450px);
       object-fit: cover;
     }
   }
@@ -104,7 +105,7 @@
       margin-top: 16px;
 
       &__title {
-        font-family: "Montserrat Bold";
+        font-family: 'Montserrat Bold';
         text-transform: uppercase;
         margin-bottom: 4px;
       }

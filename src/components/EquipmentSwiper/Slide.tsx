@@ -1,9 +1,11 @@
-import Arrow from "/src/assets/images/icons/secondArrow.svg?react";
-import Plus from "/src/assets/images/icons/plus.svg?react";
-import Minus from "/src/assets/images/icons/minus.svg?react";
-import { useState } from "react";
-import Equipment from "../../assets/images/equipment.jpg";
-import Button from "../Button/Button";
+import Arrow from '/src/assets/images/icons/secondArrow.svg?react';
+import Plus from '/src/assets/images/icons/plus.svg?react';
+import Minus from '/src/assets/images/icons/minus.svg?react';
+import { useState } from 'react';
+import Equipment from '../../assets/images/equipment.jpg';
+import Button from '../Button/Button';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
 
 type SlideProps = {
   item: any;
@@ -25,23 +27,35 @@ const Slide = ({ item }: SlideProps) => {
             </div>
             <div className="slide__buttons">
               <div
-                style={item.id === 1 ? { border: "1px solid #989898" } : {}}
+                style={item.id === 1 ? { border: '1px solid #989898' } : {}}
                 className="slide__buttons__prevBtn"
               >
-                <Arrow style={item.id === 1 ? { color: "#989898" } : {}} />
+                <Arrow style={item.id === 1 ? { color: '#989898' } : {}} />
               </div>
               <div
-                style={item.id === 5 ? { border: "1px solid #989898" } : {}}
+                style={item.id === 5 ? { border: '1px solid #989898' } : {}}
                 className="slide__buttons__nextBtn"
               >
-                <Arrow style={item.id === 5 ? { color: "#989898" } : {}} />
+                <Arrow style={item.id === 5 ? { color: '#989898' } : {}} />
               </div>
             </div>
           </div>
           <div className="slide__photo">
-            <img src={Equipment} alt="" />
+            <Swiper
+              pagination={{
+                clickable: true,
+              }}
+              modules={[Pagination]}
+            >
+              {item.images.map((item: any, index: number) => {
+                return (
+                  <SwiperSlide key={index}>
+                    <img src={item} alt="" />
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
           </div>
-          <p>pagination</p>
           <div className="slide__btn">
             <Button onClick={() => {}} text="Заказать" />
           </div>
