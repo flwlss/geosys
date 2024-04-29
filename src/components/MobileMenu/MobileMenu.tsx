@@ -16,9 +16,10 @@ const MobileMenu = ({ closeMenu }: MobileMenuProps) => {
   const { t } = useTranslation();
   const { i18n } = useTranslation();
   const { isOpen, openModal, closeModal } = useModal();
-  const lang = localStorage.getItem('i18nextLng');
+  const lang = localStorage.getItem('lang');
 
   const changeLg = (lang: string) => {
+    localStorage.setItem('lang', lang);
     i18n.changeLanguage(lang);
   };
 

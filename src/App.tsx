@@ -4,11 +4,13 @@ import { useTranslation } from 'react-i18next';
 
 function App() {
   const { i18n } = useTranslation();
-  const lang = localStorage.getItem('i18nextLng');
+  const lang = localStorage.getItem('lang');
 
   useEffect(() => {
     if (lang) {
       i18n.changeLanguage(lang);
+    } else {
+      localStorage.setItem('lang', 'ru');
     }
   }, []);
 

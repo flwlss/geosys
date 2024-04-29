@@ -14,6 +14,7 @@ const LangSelection = () => {
   }, []);
 
   const changeLg = (lang: string) => {
+    localStorage.setItem('lang', lang);
     i18n.changeLanguage(lang);
   };
 
