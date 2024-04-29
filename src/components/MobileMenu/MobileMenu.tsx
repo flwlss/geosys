@@ -16,6 +16,7 @@ const MobileMenu = ({ closeMenu }: MobileMenuProps) => {
   const { t } = useTranslation();
   const { i18n } = useTranslation();
   const { isOpen, openModal, closeModal } = useModal();
+  const lang = localStorage.getItem('i18nextLng');
 
   const changeLg = (lang: string) => {
     i18n.changeLanguage(lang);
@@ -71,6 +72,11 @@ const MobileMenu = ({ closeMenu }: MobileMenuProps) => {
         </div>
         <div className="menu__lang">
           <p
+            className={
+              lang === 'ru'
+                ? 'menu__lang__activeLang'
+                : 'menu__lang__inactiveLang'
+            }
             onClick={() => {
               changeLg('ru');
             }}
@@ -78,6 +84,11 @@ const MobileMenu = ({ closeMenu }: MobileMenuProps) => {
             Ru
           </p>
           <p
+            className={
+              lang === 'en'
+                ? 'menu__lang__activeLang'
+                : 'menu__lang__inactiveLang'
+            }
             onClick={() => {
               changeLg('en');
             }}
