@@ -1,9 +1,9 @@
-@import "../../assets/styles/mixins.scss";
+@import '../../assets/styles/mixins.scss';
 
 .page {
   width: 100%;
   height: 100%;
-  background-image: url("/images/mainPageBg.jpg");
+  background-image: url('/images/mainPageBg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,7 +21,7 @@
       @include responsive-size(font-size, 24px, 32px, 32px, 32px, 32px);
 
       span {
-        font-family: "Montserrat Bold";
+        font-family: 'Montserrat Bold';
       }
     }
   }

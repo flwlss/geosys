@@ -36,7 +36,13 @@ const Navbar = () => {
             >
               О нас
             </p>
-            <p>Геофизика</p>
+            <p
+              onClick={() => {
+                navigate(PATHS.GEOPHYSICS);
+              }}
+            >
+              Геофизика
+            </p>
             <p
               onClick={() => {
                 navigate(PATHS.SPECIAL_EQUIPMENT);
@@ -84,7 +90,13 @@ const Navbar = () => {
           >
             О нас
           </p>
-          <p>Геофизика</p>
+          <p
+            onClick={() => {
+              navigate(PATHS.GEOPHYSICS);
+            }}
+          >
+            Геофизика
+          </p>
           <p
             onClick={() => {
               navigate(PATHS.SPECIAL_EQUIPMENT);
@@ -94,7 +106,13 @@ const Navbar = () => {
             <br />
             спецтехники NAFFCO
           </p>
-          <p>Контакты</p>
+          <p
+            onClick={() => {
+              navigate(PATHS.CONTACTS);
+            }}
+          >
+            Контакты
+          </p>
         </div>
       )}
       {showMobileMenu && (
