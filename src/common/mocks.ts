@@ -1,345 +1,347 @@
-export const equipments = [
-  {
-    id: 1,
-    serie: 'Falcon Series',
-    title: 'Falcon 4',
-    images: [
-      '/images/falcon4/1.jpg',
-      '/images/falcon4/2.jpg',
-      '/images/falcon4/3.jpg',
-      '/images/falcon4/4.jpg',
-    ],
-    characteristics: [
-      {
-        title: 'КУЗОВ',
-        subtitle: [
-          '- Стальная/алюминиевая конструкция',
-          '- Внешние панели из формованного стеклопластика',
-        ],
-      },
-      {
-        title: 'СИСТЕМА ПОЖАРОТУШЕНИЯ',
-        subtitle: [
-          '- Автоматическая система пенообразования ATP, классифицированная UL по стандарту NFPA 1901',
-          '- Лафетный ствол на крыше',
-          '- Лафетный ствол на бампере',
-          '- Быстродействующая катушка для шланга',
-          '- Боковые рукавные линии',
-          '- Защитные форсунки под грузовиком',
-          '- Система орошения для защиты кабины',
-          '- Трубопроводы из нержавеющей стали SS316L',
-          '- Система DCP',
-        ],
-      },
-      {
-        title: 'ЭЛЕКТРОСИСТЕМА',
-        subtitle: [
-          '- Сертифицированные автомобильные программируемые контроллеры',
-          '- Прочные сенсорные панели / переключатели управления',
-          '- Ходовые огни',
-          '- Сигнальные огни',
-          '- Освещение шкафчиков',
-          '- Освещение места происшествия',
-          '- Система громкоговорящей связи',
-        ],
-      },
-    ],
-    specifications: [
-      {
-        title: 'Привод',
-        value: '4x4',
-      },
-      {
-        title: 'Водяной бак (л)',
-        value: 'до 6 000 литров',
-      },
-      {
-        title: 'Бак пенообразователя (л)',
-        value: 'до 720 литров',
-      },
-      {
-        title: 'Производительность пожарного насоса',
-        value: 'до 10 000 л/мин при давлении 10 бар',
-      },
-      {
-        title: 'Полная масса',
-        value: 'до 26 тонн',
-      },
-    ],
-  },
-  {
-    id: 2,
-    serie: 'Falcon Series',
-    title: 'Falcon 6',
-    images: [
-      '/images/falcon6/1.jpg',
-      '/images/falcon6/2.jpg',
-      '/images/falcon6/3.jpg',
-    ],
-    characteristics: [
-      {
-        title: 'КУЗОВ',
-        subtitle: [
-          '- Стальная/алюминиевая конструкция',
-          '- Внешние панели из формованного стеклопластика',
-        ],
-      },
-      {
-        title: 'СИСТЕМА ПОЖАРОТУШЕНИЯ',
-        subtitle: [
-          '- Автоматическая система пенообразования ATP, классифицированная UL по стандарту NFPA 1901',
-          '- Лафетный ствол на крыше',
-          '- Лафетный ствол на бампере',
-          '- Быстродействующая катушка для шланга',
-          '- Боковые рукавные линии',
-          '- Защитные форсунки под грузовиком',
-          '- Система орошения для защиты кабины',
-          '- Трубопроводы из нержавеющей стали SS316L',
-          '- Система DCP',
-        ],
-      },
-      {
-        title: 'ЭЛЕКТРОСИСТЕМА',
-        subtitle: [
-          '- Сертифицированные автомобильные программируемые контроллеры',
-          '- Прочные сенсорные панели / переключатели управления',
-          '- Ходовые огни',
-          '- Сигнальные огни',
-          '- Освещение шкафчиков',
-          '- Освещение места происшествия',
-          '- Система громкоговорящей связи',
-        ],
-      },
-    ],
-    specifications: [
-      {
-        title: 'Привод',
-        value: '6х6',
-      },
-      {
-        title: 'Водяной бак (л)',
-        value: 'до 12 500 литров',
-      },
-      {
-        title: 'Бак пенообразователя (л)',
-        value: 'до 1 500 литров',
-      },
-      {
-        title: 'Производительность пожарного насоса',
-        value: 'до 10 000 л/мин при давлении 10 бар',
-      },
-      {
-        title: 'Полная масса',
-        value: 'до 39 тонн',
-      },
-    ],
-    note: '**Возможна опция с выдвижной турелью (HRET) 16 м при уменьшенном объеме воды/пены',
-  },
-  {
-    id: 3,
-    serie: 'Falcon Series',
-    title: 'Falcon 8',
-    images: [
-      '/images/falcon8/1.jpg',
-      '/images/falcon8/2.jpg',
-      '/images/falcon8/3.jpg',
-      '/images/falcon8/4.jpg',
-      '/images/falcon8/5.jpg',
-      '/images/falcon8/6.jpg',
-      '/images/falcon8/7.jpg',
-      '/images/falcon8/8.jpg',
-      '/images/falcon8/9.jpg',
-      '/images/falcon8/10.jpg',
-      '/images/falcon8/11.jpg',
-    ],
-    characteristics: [
-      {
-        title: 'КУЗОВ',
-        subtitle: [
-          '- Стальная/алюминиевая конструкция',
-          '- Внешние панели из формованного стеклопластика',
-        ],
-      },
-      {
-        title: 'СИСТЕМА ПОЖАРОТУШЕНИЯ',
-        subtitle: [
-          '- Автоматическая система пенообразования ATP, классифицированная UL по стандарту NFPA 1901',
-          '- Лафетный ствол на крыше',
-          '- Лафетный ствол на бампере',
-          '- Быстродействующая катушка для шланга',
-          '- Боковые рукавные линии',
-          '- Защитные форсунки под грузовиком',
-          '- Система орошения для защиты кабины',
-          '- Трубопроводы из нержавеющей стали SS316L',
-          '- Система DCP',
-        ],
-      },
-      {
-        title: 'ЭЛЕКТРОСИСТЕМА',
-        subtitle: [
-          '- Сертифицированные автомобильные программируемые контроллеры',
-          '- Прочные сенсорные панели / переключатели управления',
-          '- Ходовые огни',
-          '- Сигнальные огни',
-          '- Освещение шкафчиков',
-          '- Освещение места происшествия',
-          '- Система громкоговорящей связи',
-        ],
-      },
-    ],
-    specifications: [
-      {
-        title: 'Привод',
-        value: '8х8',
-      },
-      {
-        title: 'Водяной бак (л)',
-        value: 'до 16 000 литров',
-      },
-      {
-        title: 'Бак пенообразователя (л)',
-        value: 'до 1 920 литров',
-      },
-      {
-        title: 'Производительность пожарного насоса',
-        value: 'до 10 000 л/мин при давлении 10 бар',
-      },
-      {
-        title: 'Полная масса',
-        value: 'до 52 тонн',
-      },
-    ],
-    note: '**Доступны варианты с выдвижной турелью (HRET) 16 м или 20 м при уменьшенном объеме воды/пены',
-  },
-  {
-    id: 4,
-    serie: 'ARFF Series',
-    title: 'ARFF Commercial 4*4',
-    images: ['/images/arff4/1.jpg'],
-    characteristics: [
-      {
-        title: 'КУЗОВ',
-        subtitle: [
-          '- Алюминиевые конструкции 6061 T6 или полипропиленовые кузова',
-        ],
-      },
-      {
-        title: 'СИСТЕМА ПОЖАРОТУШЕНИЯ',
-        subtitle: [
-          '- Пожарные насосы до 10 000 л/мин при давлении 10 бар',
-          '- Автоматическая система пенообразования ATP, классифицированная UL по стандарту NFPA 1901',
-          '- Лафетный ствол на крыше',
-          '- Лафетный ствол на бампере',
-          '- Быстродействующая катушка для шланга',
-          '- Боковые рукавные линии',
-          '- Защитные форсунки под грузовиком',
-          '- Система орошения для защиты кабины',
-          '- Трубопроводы из нержавеющей стали SS316L',
-          '- Система DCP',
-        ],
-      },
-      {
-        title: 'ЭЛЕКТРОСИСТЕМА',
-        subtitle: [
-          '- Сертифицированные автомобильные программируемые контроллеры',
-          '- Прочные сенсорные панели / переключатели управления',
-          '- Ходовые огни',
-          '- Сигнальные огни',
-          '- Освещение шкафчиков',
-          '- Освещение места происшествия',
-          '- Система громкоговорящей связи',
-        ],
-      },
-    ],
-    specifications: [
-      {
-        title: 'Привод',
-        value: '4x4',
-      },
-      {
-        title: 'Водяной бак (л)',
-        value: 'до 4 000 литров',
-      },
-      {
-        title: 'Бак пенообразователя (л)',
-        value: 'до 480 литров',
-      },
-      {
-        title: 'Производительность пожарного насоса',
-        value: 'до 10 000 л/мин при давлении 10 бар',
-      },
-      {
-        title: 'Полная масса',
-        value: 'до 22 тонн',
-      },
-    ],
-  },
-  {
-    id: 5,
-    serie: 'ARFF Series',
-    title: 'ARFF Commercial 6х6',
-    images: [
-      '/images/arff6/1.jpg',
-      '/images/arff6/2.jpg',
-      '/images/arff6/3.jpg',
-      '/images/arff6/4.jpg',
-      '/images/arff6/5.jpg',
-    ],
-    characteristics: [
-      {
-        title: 'КУЗОВ',
-        subtitle: [
-          '- Алюминиевые конструкции 6061 T6 или полипропиленовые кузова',
-        ],
-      },
-      {
-        title: 'СИСТЕМА ПОЖАРОТУШЕНИЯ',
-        subtitle: [
-          '- Автоматическая система пенообразования ATP, классифицированная UL по стандарту NFPA 1901',
-          '- Лафетный ствол на крыше',
-          '- Лафетный ствол на бампере',
-          '- Быстродействующая катушка для шланга',
-          '- Боковые рукавные линии',
-          '- Защитные форсунки под грузовиком',
-          '- Система орошения для защиты кабины',
-          '- Трубопроводы из нержавеющей стали SS316L',
-          '- Система DCP',
-        ],
-      },
-      {
-        title: 'ЭЛЕКТРОСИСТЕМА',
-        subtitle: [
-          '- Сертифицированные автомобильные программируемые контроллеры',
-          '- Прочные сенсорные панели / переключатели управления',
-          '- Ходовые огни',
-          '- Сигнальные огни',
-          '- Освещение шкафчиков',
-          '- Освещение места происшествия',
-          '- Система громкоговорящей связи',
-        ],
-      },
-    ],
-    specifications: [
-      {
-        title: 'Привод',
-        value: '6x6',
-      },
-      {
-        title: 'Водяной бак (л)',
-        value: 'до 7 000 литров',
-      },
-      {
-        title: 'Бак пенообразователя (л)',
-        value: 'до 1 000 литров',
-      },
-      {
-        title: 'Производительность пожарного насоса',
-        value: 'до 10 000 л/мин при давлении 10 бар',
-      },
-      {
-        title: 'Полная масса',
-        value: 'до 30 тонн',
-      },
-    ],
-  },
-];
+import { useTranslation } from 'react-i18next';
+
+export const equipments = () => {
+  const { t } = useTranslation();
+
+  return [
+    {
+      id: 1,
+      serie: 'Falcon Series',
+      title: 'Falcon 4',
+      images: [
+        '/images/falcon4/1.jpg',
+        '/images/falcon4/2.jpg',
+        '/images/falcon4/3.jpg',
+        '/images/falcon4/4.jpg',
+      ],
+      characteristics: [
+        {
+          title: t('equipmentPage.body'),
+          subtitle: [
+            t('equipmentPage.construction'),
+            t('equipmentPage.panels'),
+          ],
+        },
+        {
+          title: t('equipmentPage.firefighting'),
+          subtitle: [
+            t('equipmentPage.system'),
+            t('equipmentPage.roofMonitor'),
+            t('equipmentPage.roofBumber'),
+            t('equipmentPage.coil'),
+            t('equipmentPage.sideLines'),
+            t('equipmentPage.injectors'),
+            t('equipmentPage.irrigationSystem'),
+            t('equipmentPage.pipeline'),
+            t('equipmentPage.dcp'),
+          ],
+        },
+        {
+          title: t('equipmentPage.electricalSystem'),
+          subtitle: [
+            t('equipmentPage.controller'),
+            t('equipmentPage.sensorPanels'),
+            t('equipmentPage.runningLights'),
+            t('equipmentPage.signalLights'),
+            t('equipmentPage.cabinetLighting'),
+            t('equipmentPage.incident'),
+            t('equipmentPage.conn'),
+          ],
+        },
+      ],
+      specifications: [
+        {
+          title: t('equipmentPage.drive'),
+          value: '4x4',
+        },
+        {
+          title: t('equipmentPage.waterTank'),
+          value: t('equipmentPage.upto6000'),
+        },
+        {
+          title: t('equipmentPage.foamTank'),
+          value: t('equipmentPage.upto720'),
+        },
+        {
+          title: t('equipmentPage.pump'),
+          value: t('equipmentPage.performance'),
+        },
+        {
+          title: t('equipmentPage.gvw'),
+          value: t('equipmentPage.upto26'),
+        },
+      ],
+    },
+    {
+      id: 2,
+      serie: 'Falcon Series',
+      title: 'Falcon 6',
+      images: [
+        '/images/falcon6/1.jpg',
+        '/images/falcon6/2.jpg',
+        '/images/falcon6/3.jpg',
+      ],
+      characteristics: [
+        {
+          title: t('equipmentPage.body'),
+          subtitle: [
+            t('equipmentPage.construction'),
+            t('equipmentPage.panels'),
+          ],
+        },
+        {
+          title: t('equipmentPage.firefighting'),
+          subtitle: [
+            t('equipmentPage.system'),
+            t('equipmentPage.roofMonitor'),
+            t('equipmentPage.roofBumber'),
+            t('equipmentPage.coil'),
+            t('equipmentPage.sideLines'),
+            t('equipmentPage.injectors'),
+            t('equipmentPage.irrigationSystem'),
+            t('equipmentPage.pipeline'),
+            t('equipmentPage.dcp'),
+          ],
+        },
+        {
+          title: t('equipmentPage.electricalSystem'),
+          subtitle: [
+            t('equipmentPage.controller'),
+            t('equipmentPage.sensorPanels'),
+            t('equipmentPage.runningLights'),
+            t('equipmentPage.signalLights'),
+            t('equipmentPage.cabinetLighting'),
+            t('equipmentPage.incident'),
+            t('equipmentPage.conn'),
+          ],
+        },
+      ],
+      specifications: [
+        {
+          title: t('equipmentPage.drive'),
+          value: '6х6',
+        },
+        {
+          title: t('equipmentPage.waterTank'),
+          value: t('equipmentPage.upto12500'),
+        },
+        {
+          title: t('equipmentPage.foamTank'),
+          value: t('equipmentPage.upto1500'),
+        },
+        {
+          title: t('equipmentPage.pump'),
+          value: t('equipmentPage.performance'),
+        },
+        {
+          title: t('equipmentPage.gvw'),
+          value: t('equipmentPage.upto39'),
+        },
+      ],
+      note: t('equipmentPage.falcon6note'),
+    },
+    {
+      id: 3,
+      serie: 'Falcon Series',
+      title: 'Falcon 8',
+      images: [
+        '/images/falcon8/1.jpg',
+        '/images/falcon8/2.jpg',
+        '/images/falcon8/3.jpg',
+        '/images/falcon8/4.jpg',
+        '/images/falcon8/5.jpg',
+        '/images/falcon8/6.jpg',
+        '/images/falcon8/7.jpg',
+        '/images/falcon8/8.jpg',
+        '/images/falcon8/9.jpg',
+        '/images/falcon8/10.jpg',
+        '/images/falcon8/11.jpg',
+      ],
+      characteristics: [
+        {
+          title: t('equipmentPage.body'),
+          subtitle: [
+            t('equipmentPage.construction'),
+            t('equipmentPage.panels'),
+          ],
+        },
+        {
+          title: t('equipmentPage.firefighting'),
+          subtitle: [
+            t('equipmentPage.system'),
+            t('equipmentPage.roofMonitor'),
+            t('equipmentPage.roofBumber'),
+            t('equipmentPage.coil'),
+            t('equipmentPage.sideLines'),
+            t('equipmentPage.injectors'),
+            t('equipmentPage.irrigationSystem'),
+            t('equipmentPage.pipeline'),
+            t('equipmentPage.dcp'),
+          ],
+        },
+        {
+          title: t('equipmentPage.electricalSystem'),
+          subtitle: [
+            t('equipmentPage.controller'),
+            t('equipmentPage.sensorPanels'),
+            t('equipmentPage.runningLights'),
+            t('equipmentPage.signalLights'),
+            t('equipmentPage.cabinetLighting'),
+            t('equipmentPage.incident'),
+            t('equipmentPage.conn'),
+          ],
+        },
+      ],
+      specifications: [
+        {
+          title: t('equipmentPage.drive'),
+          value: '8х8',
+        },
+        {
+          title: t('equipmentPage.waterTank'),
+          value: t('equipmentPage.upto16000'),
+        },
+        {
+          title: t('equipmentPage.foamTank'),
+          value: t('equipmentPage.upto1920'),
+        },
+        {
+          title: t('equipmentPage.pump'),
+          value: t('equipmentPage.performance'),
+        },
+        {
+          title: t('equipmentPage.gvw'),
+          value: t('equipmentPage.upto52'),
+        },
+      ],
+      note: t('equipmentPage.falcon8note'),
+    },
+    {
+      id: 4,
+      serie: 'ARFF Series',
+      title: 'ARFF Commercial 4*4',
+      images: ['/images/arff4/1.jpg'],
+      characteristics: [
+        {
+          title: t('equipmentPage.body'),
+          subtitle: [t('equipmentPage.body6061')],
+        },
+        {
+          title: t('equipmentPage.firefighting'),
+          subtitle: [
+            t('equipmentPage.pump10000'),
+            t('equipmentPage.system'),
+            t('equipmentPage.roofMonitor'),
+            t('equipmentPage.roofBumber'),
+            t('equipmentPage.coil'),
+            t('equipmentPage.sideLines'),
+            t('equipmentPage.injectors'),
+            t('equipmentPage.irrigationSystem'),
+            t('equipmentPage.pipeline'),
+            t('equipmentPage.dcp'),
+          ],
+        },
+        {
+          title: t('equipmentPage.electricalSystem'),
+          subtitle: [
+            t('equipmentPage.controller'),
+            t('equipmentPage.sensorPanels'),
+            t('equipmentPage.runningLights'),
+            t('equipmentPage.signalLights'),
+            t('equipmentPage.cabinetLighting'),
+            t('equipmentPage.incident'),
+            t('equipmentPage.conn'),
+          ],
+        },
+      ],
+      specifications: [
+        {
+          title: t('equipmentPage.drive'),
+          value: '4x4',
+        },
+        {
+          title: t('equipmentPage.waterTank'),
+          value: t('equipmentPage.upto4000'),
+        },
+        {
+          title: t('equipmentPage.foamTank'),
+          value: t('equipmentPage.upto480'),
+        },
+        {
+          title: t('equipmentPage.pump'),
+          value: t('equipmentPage.performance'),
+        },
+        {
+          title: t('equipmentPage.gvw'),
+          value: t('equipmentPage.upto22'),
+        },
+      ],
+    },
+    {
+      id: 5,
+      serie: 'ARFF Series',
+      title: 'ARFF Commercial 6х6',
+      images: [
+        '/images/arff6/1.jpg',
+        '/images/arff6/2.jpg',
+        '/images/arff6/3.jpg',
+        '/images/arff6/4.jpg',
+        '/images/arff6/5.jpg',
+      ],
+      characteristics: [
+        {
+          title: t('equipmentPage.body'),
+          subtitle: [t('equipmentPage.body6061')],
+        },
+        {
+          title: t('equipmentPage.firefighting'),
+          subtitle: [
+            t('equipmentPage.system'),
+            t('equipmentPage.roofMonitor'),
+            t('equipmentPage.roofBumber'),
+            t('equipmentPage.coil'),
+            t('equipmentPage.sideLines'),
+            t('equipmentPage.injectors'),
+            t('equipmentPage.irrigationSystem'),
+            t('equipmentPage.pipeline'),
+            t('equipmentPage.dcp'),
+          ],
+        },
+        {
+          title: t('equipmentPage.electricalSystem'),
+          subtitle: [
+            t('equipmentPage.controller'),
+            t('equipmentPage.sensorPanels'),
+            t('equipmentPage.runningLights'),
+            t('equipmentPage.signalLights'),
+            t('equipmentPage.cabinetLighting'),
+            t('equipmentPage.incident'),
+            t('equipmentPage.conn'),
+          ],
+        },
+      ],
+      specifications: [
+        {
+          title: t('equipmentPage.drive'),
+          value: '6x6',
+        },
+        {
+          title: t('equipmentPage.waterTank'),
+          value: t('equipmentPage.upto7000'),
+        },
+        {
+          title: t('equipmentPage.foamTank'),
+          value: t('equipmentPage.upto1000'),
+        },
+        {
+          title: t('equipmentPage.pump'),
+          value: t('equipmentPage.performance'),
+        },
+        {
+          title: t('equipmentPage.gvw'),
+          value: t('equipmentPage.upto30'),
+        },
+      ],
+    },
+  ];
+};

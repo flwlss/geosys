@@ -4,9 +4,11 @@ import './Equipment.scss';
 import Arrow from '/src/assets/images/icons/secondArrow.svg?react';
 import { PATHS } from '../../navigation/paths';
 import EquipmentSwiper from '../../components/EquipmentSwiper/EquipmentSwiper';
+import { useTranslation } from 'react-i18next';
 
 const Equipment = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   return (
     <div className="specialEquipment">
@@ -21,7 +23,7 @@ const Equipment = () => {
               className="equipment__goback"
             >
               <Arrow />
-              <p>Поставка спецтехники NAFFCO</p>
+              <p>{t('equipmentPage.backText')}</p>
             </div>
             <EquipmentSwiper />
           </div>

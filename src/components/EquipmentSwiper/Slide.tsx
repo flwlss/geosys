@@ -2,10 +2,10 @@ import Arrow from '/src/assets/images/icons/secondArrow.svg?react';
 import Plus from '/src/assets/images/icons/plus.svg?react';
 import Minus from '/src/assets/images/icons/minus.svg?react';
 import { useState } from 'react';
-import Equipment from '../../assets/images/equipment.jpg';
 import Button from '../Button/Button';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
+import { useTranslation } from 'react-i18next';
 
 type SlideProps = {
   item: any;
@@ -14,6 +14,7 @@ type SlideProps = {
 const Slide = ({ item }: SlideProps) => {
   const [showCharacteristics, setShowCharacteristics] = useState(false);
   const [showSpecifications, setShowSpecifications] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <div>
@@ -68,7 +69,7 @@ const Slide = ({ item }: SlideProps) => {
               }}
               className="slide__rightContent__item"
             >
-              <p>Характеристики</p>
+              <p>{t('equipmentPage.features')}</p>
               {showCharacteristics ? <Minus /> : <Plus />}
             </div>
             {showCharacteristics && (
@@ -106,7 +107,7 @@ const Slide = ({ item }: SlideProps) => {
               }}
               className="slide__rightContent__item"
             >
-              <p>Спецификации</p>
+              <p>{t('equipmentPage.specifications')}</p>
               {showSpecifications ? <Minus /> : <Plus />}
             </div>
             {showSpecifications && (
