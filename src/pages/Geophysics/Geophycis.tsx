@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useModal } from '../../common/helpers';
 import Modal from '../../components/Modal/Modal';
+import Button from '../../components/Button/Button';
 
 const Geophycis = () => {
   const navigate = useNavigate();
@@ -26,7 +27,12 @@ const Geophycis = () => {
                 onClick={() => navigate('/geophysics/loggingTrack')}
                 src={logginTruck}
               />
-              <button onClick={openModal}>{t('geoPhysics.main.button')}</button>
+              <Button
+                text={t('geoPhysics.main.button')}
+                onClick={() => {
+                  openModal();
+                }}
+              />
             </div>
             <div className="geophysics__content__wrapper__item">
               {t('geoPhysics.main.title2')}
@@ -34,7 +40,12 @@ const Geophycis = () => {
                 onClick={() => navigate('/geophysics/skidMountedUnit')}
                 src={skidMountedUnit}
               />
-              <button onClick={openModal}>{t('geoPhysics.main.button')}</button>
+              <Button
+                text={t('geoPhysics.main.button')}
+                onClick={() => {
+                  openModal();
+                }}
+              />
             </div>
           </div>
         </div>

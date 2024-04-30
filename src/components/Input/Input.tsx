@@ -43,25 +43,40 @@ const Input: React.FC<InputProps> = ({
         {textarea ? (
           <>
             <textarea
-              style={{ marginTop: marginTop }}
+              style={
+                error
+                  ? { marginTop: marginTop, borderBottom: '1px solid red' }
+                  : { marginTop: marginTop }
+              }
               required
               {...reactHookForm}
               className="textarea"
             />
-            <span style={{ left: left }} className="floatingLabel">
+            <span
+              style={error ? { left: left, color: 'red' } : { left: left }}
+              className="floatingLabel"
+            >
               {placeholder}
             </span>
           </>
         ) : (
           <>
-            <input {...reactHookForm} type={type} className="input" required />
-            <span style={{ left: left }} className="floatingLabel">
+            <input
+              style={error ? { borderBottom: '1px solid red' } : {}}
+              {...reactHookForm}
+              type={type}
+              className="input"
+              required
+            />
+            <span
+              style={error ? { left: left, color: 'red' } : { left: left }}
+              className="floatingLabel"
+            >
               {placeholder}
             </span>
           </>
         )}
       </label>
-      {error && <h5 className="error">{error}</h5>}
     </>
   );
 };

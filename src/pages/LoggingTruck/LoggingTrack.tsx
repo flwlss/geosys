@@ -12,6 +12,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Modal from '../../components/Modal/Modal';
 import { useModal } from '../../common/helpers';
+import Button from '../../components/Button/Button';
 
 const LoggingTruck = () => {
   const navigate = useNavigate();
@@ -33,7 +34,12 @@ const LoggingTruck = () => {
             <div className="truck">
               {t('geoPhysics.main.title1noCaps')}
               <img src={logginTruck} />
-              <button onClick={openModal}>{t('geoPhysics.main.button')}</button>
+              <Button
+                text={t('geoPhysics.main.button')}
+                onClick={() => {
+                  openModal();
+                }}
+              />
             </div>
             <div className="wrapperInfo">
               <div className="navInfo">

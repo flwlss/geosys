@@ -161,6 +161,7 @@ input[type='password'] {
   bottom: 10px;
   font-size: 10px;
   opacity: 1;
+  color: white;
 }
 
 .textarea:focus ~ .floatingLabel {
@@ -168,6 +169,7 @@ input[type='password'] {
   bottom: 10px;
   font-size: 10px;
   opacity: 1;
+  color: white;
 }
 
 .textarea:not(:focus):valid ~ .floatingLabel {

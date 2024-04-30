@@ -40,6 +40,12 @@
         img {
           width: 100%;
           cursor: pointer;
+
+          opacity: 1;
+          transition: 0.3s;
+          &:hover {
+            opacity: 0.5;
+          }
         }
         button {
           width: 250px;

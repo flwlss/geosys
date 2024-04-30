@@ -188,6 +188,11 @@
           @include responsive-size(gap, 20px, 70px, 35px, 100px, 100px);
           .navInfoItem {
             cursor: pointer;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover {
+              color: white;
+            }
           }
 
           .navInfoItemActive {

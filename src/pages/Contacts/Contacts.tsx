@@ -71,12 +71,12 @@ const Contacts = () => {
                 <div className="buttonWrapper">
                   <Rectangle2 className="rectangle" />
                   <div className="button">
-                    {t('contacts.send')} <Arrow />
+                    {t('contacts.send')} <Arrow className="arrow" />
                   </div>
                 </div>
               ) : (
                 <button className="mobileButton">
-                  {t('contacts.send')} <Arrow />
+                  {t('contacts.send')} <Arrow className="arrow" />
                 </button>
               )}
             </div>
