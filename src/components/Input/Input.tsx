@@ -14,6 +14,7 @@ interface InputProps {
   marginTopLabel?: string;
   alignItems?: string;
   maxWidth?: string;
+  color?: string;
 }
 
 const Input: React.FC<InputProps> = ({
@@ -28,6 +29,7 @@ const Input: React.FC<InputProps> = ({
   marginTopLabel,
   alignItems,
   maxWidth,
+  color,
 }) => {
   return (
     <>
@@ -46,7 +48,7 @@ const Input: React.FC<InputProps> = ({
               style={
                 error
                   ? { marginTop: marginTop, borderBottom: '1px solid red' }
-                  : { marginTop: marginTop }
+                  : { marginTop: marginTop, color: color }
               }
               required
               {...reactHookForm}
@@ -62,7 +64,9 @@ const Input: React.FC<InputProps> = ({
         ) : (
           <>
             <input
-              style={error ? { borderBottom: '1px solid red' } : {}}
+              style={
+                error ? { borderBottom: '1px solid red' } : { color: color }
+              }
               {...reactHookForm}
               type={type}
               className="input"

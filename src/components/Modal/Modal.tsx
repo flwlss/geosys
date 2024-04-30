@@ -22,17 +22,20 @@ const Modal: React.FC<Props> = ({ closeModal }) => {
         <div>
           <div className="inputsWrapper">
             <Input
+              color="#989898"
               alignItems="center"
               textarea={false}
               placeholder={t('contacts.name')}
             />
             <Input
+              color="#989898"
               type="text"
               alignItems="center"
               textarea={false}
               placeholder={t('contacts.email')}
             />
             <Input
+              color="#989898"
               type="number"
               alignItems="center"
               textarea={false}
@@ -40,6 +43,7 @@ const Modal: React.FC<Props> = ({ closeModal }) => {
             />
 
             <Input
+              color="#989898"
               labelHeight="75px"
               alignItems="flex-start"
               textarea={true}
