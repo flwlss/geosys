@@ -7,6 +7,7 @@ import Arrow from '/src/assets/images/icons/arrow.svg?react';
 import './Contacts.scss';
 import Input from '../../components/Input/Input';
 import { useTranslation } from 'react-i18next';
+import Number5 from '/src/assets/images/icons/number5.svg?react';
 
 const Contacts = () => {
   const width = window.innerWidth;
@@ -15,6 +16,7 @@ const Contacts = () => {
 
   return (
     <div className="contacts">
+      <Number5 className="contacts__number" />
       <Container>
         <div className="contactInfoWrapper">
           <div className="title">{t('navbar.contacts')} </div>

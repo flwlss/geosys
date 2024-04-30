@@ -36,6 +36,7 @@
       text-decoration: underline;
       text-decoration-color: #d11e12;
       text-underline-offset: 8px;
+      z-index: 1;
 
       &:last-child {
         margin-right: 60px;
@@ -47,6 +48,7 @@
       margin-right: 24px;
       cursor: pointer;
       white-space: pre-wrap;
+      z-index: 1;
 
       &:hover {
         text-decoration: underline;
@@ -113,6 +115,7 @@
       text-decoration: underline;
       text-decoration-color: #d11e12;
       text-underline-offset: 8px;
+      z-index: 1;
 
       &:last-child {
         margin-right: 0;
@@ -124,6 +127,7 @@
       text-align: center;
       cursor: pointer;
       white-space: pre-wrap;
+      z-index: 1;
 
       &:hover {
         text-decoration: underline;

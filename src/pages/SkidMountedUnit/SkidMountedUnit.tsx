@@ -13,6 +13,7 @@ import { useTranslation } from 'react-i18next';
 import { useModal } from '../../common/helpers';
 import Modal from '../../components/Modal/Modal';
 import Button from '../../components/Button/Button';
+import Number3 from '/src/assets/images/icons/number3.svg?react';
 
 const SkidMountedUnit = () => {
   const navigate = useNavigate();
@@ -23,6 +24,7 @@ const SkidMountedUnit = () => {
   const [nav, setNav] = useState(1);
   return (
     <div className="SkidMountedUnit">
+      <Number3 className="SkidMountedUnit__number" />
       {isOpen && <Modal closeModal={closeModal} />}
       <Container>
         <div className="SkidMountedUnit__contentWrapper">

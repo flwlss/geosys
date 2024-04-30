@@ -11,6 +11,13 @@
   position: relative;
   overflow: auto;
 
+  &__number {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+  }
+
   @media (max-width: 560px) {
     padding-bottom: 40px;
   }
@@ -145,6 +152,14 @@
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    &__number {
+      display: none;
     }
   }
 }

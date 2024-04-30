@@ -10,6 +10,7 @@ import Edu from '/src/assets/images/icons/edu.svg?react';
 import { useNavigate } from 'react-router-dom';
 import { PATHS } from '../../navigation/paths';
 import { useTranslation } from 'react-i18next';
+import Number4 from '/src/assets/images/icons/number4.svg?react';
 
 const SpecialEquipment = () => {
   const navigate = useNavigate();
@@ -17,9 +18,9 @@ const SpecialEquipment = () => {
 
   return (
     <div className="specialEquipment">
+      <Number4 className="specialEquipment__content__number" />
       <Container>
         <div className="specialEquipment__content">
-          {/* <Number2 className="specialEquipment__content__number" /> */}
           <Marker title={t('specialEquipmentPage.title')} />
           <div className="specialEquipment__contentWrapper">
             <div className="specialEquipment__leftContent">

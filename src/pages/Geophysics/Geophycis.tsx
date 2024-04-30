@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 import { useModal } from '../../common/helpers';
 import Modal from '../../components/Modal/Modal';
 import Button from '../../components/Button/Button';
+import Number3 from '/src/assets/images/icons/number3.svg?react';
 
 const Geophycis = () => {
   const navigate = useNavigate();
@@ -16,6 +17,7 @@ const Geophycis = () => {
   const { isOpen, openModal, closeModal } = useModal();
   return (
     <div className="geophysics">
+      <Number3 className="geophysics__number" />
       {isOpen && <Modal closeModal={closeModal} />}
       <Container>
         <div className="geophysics__content">

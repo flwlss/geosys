@@ -3,7 +3,7 @@
 .about {
   width: 100%;
   height: 100%;
-  background-image: url('/images/mainPageBg.jpg');
+  background-image: url('/images/aboutBg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,11 +15,12 @@
     padding-bottom: 50px;
     position: relative;
 
-    // &__number {
-    //   position: absolute;
-    //   right: 0;
-    //   top: 0;
-    // }
+    &__number {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+    }
   }
 
   &__textWrapper {
@@ -77,6 +78,16 @@
       &__rightText {
         margin-top: 40px;
         width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about {
+    &__content {
+      &__number {
+        display: none;
       }
     }
   }

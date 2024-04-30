@@ -5,6 +5,7 @@ import Arrow from '/src/assets/images/icons/secondArrow.svg?react';
 import { PATHS } from '../../navigation/paths';
 import EquipmentSwiper from '../../components/EquipmentSwiper/EquipmentSwiper';
 import { useTranslation } from 'react-i18next';
+import Number4 from '/src/assets/images/icons/number4.svg?react';
 
 const Equipment = () => {
   const navigate = useNavigate();
@@ -12,9 +13,9 @@ const Equipment = () => {
 
   return (
     <div className="specialEquipment">
+      <Number4 className="specialEquipment__content__number" />
       <Container>
         <div className="specialEquipment__content">
-          {/* <Number2 className="specialEquipment__content__number" /> */}
           <div className="equipment">
             <div
               onClick={() => {

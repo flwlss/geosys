@@ -13,6 +13,7 @@ import { useTranslation } from 'react-i18next';
 import Modal from '../../components/Modal/Modal';
 import { useModal } from '../../common/helpers';
 import Button from '../../components/Button/Button';
+import Number3 from '/src/assets/images/icons/number3.svg?react';
 
 const LoggingTruck = () => {
   const navigate = useNavigate();
@@ -23,6 +24,7 @@ const LoggingTruck = () => {
   const [nav, setNav] = useState(1);
   return (
     <div className="LoggingTruck">
+      <Number3 className="LoggingTruck__number" />
       {isOpen && <Modal closeModal={closeModal} />}
       <Container>
         <div className="LoggingTruck__contentWrapper">
