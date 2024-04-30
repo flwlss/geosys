@@ -1,3 +1,5 @@
+@import '../../assets/styles/mixins.scss';
+
 .geophysics {
   width: 100%;
   height: 100%;
@@ -21,6 +23,8 @@
     position: relative;
 
     &__wrapper {
+      @include responsive-size(padding-left, 16px, 60px, 60px, 60px, 100px);
+      @include responsive-size(padding-right, 16px, 60px, 60px, 60px, 100px);
       gap: 185px;
       margin-top: 80px;
       display: flex;
