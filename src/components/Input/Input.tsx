@@ -15,6 +15,7 @@ interface InputProps {
   alignItems?: string;
   maxWidth?: string;
   color?: string;
+  modal?: boolean;
 }
 
 const Input: React.FC<InputProps> = ({
@@ -30,6 +31,7 @@ const Input: React.FC<InputProps> = ({
   alignItems,
   maxWidth,
   color,
+  modal,
 }) => {
   return (
     <>
@@ -56,7 +58,7 @@ const Input: React.FC<InputProps> = ({
             />
             <span
               style={error ? { left: left, color: 'red' } : { left: left }}
-              className="floatingLabel"
+              className={modal ? 'floatingLabelModal' : 'floatingLabel'}
             >
               {placeholder}
             </span>
@@ -74,7 +76,7 @@ const Input: React.FC<InputProps> = ({
             />
             <span
               style={error ? { left: left, color: 'red' } : { left: left }}
-              className="floatingLabel"
+              className={modal ? 'floatingLabelModal' : 'floatingLabel'}
             >
               {placeholder}
             </span>

@@ -34,6 +34,7 @@ const SkidMountedUnit = () => {
           </div>
           <div className="content">
             <div className="truck">
+            <div className="redBlock" />
               SKID-MOUNTED UNIT
               <img src={skidMountedUnit} />
               <Button
@@ -276,7 +277,7 @@ const SkidMountedUnit = () => {
               </div>
             </div>
           </div>
-          <div className="redBlock" />
+          <div className="redBlock2" />
         </div>
       </Container>
     </div>

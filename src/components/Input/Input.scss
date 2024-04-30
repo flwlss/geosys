@@ -141,7 +141,6 @@ input[type='password'] {
   font-size: 16px;
   line-height: 14px;
   pointer-events: none;
-
   position: absolute;
   top: 16px;
   transition: 0.2s ease all;
@@ -149,6 +148,10 @@ input[type='password'] {
   @media (max-width: 560px) {
     left: 0px;
   }
+}
+
+.floatingLabelModal {
+  @extend .floatingLabel;
 }
 
 .input:focus {
@@ -164,6 +167,15 @@ input[type='password'] {
   color: white;
 }
 
+.input:focus ~ .floatingLabelModal,
+.input:not(:focus):valid ~ .floatingLabelModal {
+  top: 0px;
+  bottom: 10px;
+  font-size: 10px;
+  opacity: 1;
+  color: black;
+}
+
 .textarea:focus ~ .floatingLabel {
   top: 0px;
   bottom: 10px;
@@ -172,7 +184,22 @@ input[type='password'] {
   color: white;
 }
 
+.textarea:focus ~ .floatingLabelModal {
+  top: 0px;
+  bottom: 10px;
+  font-size: 10px;
+  opacity: 1;
+  color: black;
+}
+
 .textarea:not(:focus):valid ~ .floatingLabel {
+  top: 0px;
+  bottom: 10px;
+  font-size: 10px;
+  opacity: 1;
+}
+
+.textarea:not(:focus):valid ~ .floatingLabelModal {
   top: 0px;
   bottom: 10px;
   font-size: 10px;

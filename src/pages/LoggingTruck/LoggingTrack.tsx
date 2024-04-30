@@ -34,6 +34,7 @@ const LoggingTruck = () => {
           </div>
           <div className="content">
             <div className="truck">
+              <div className="redBlock" />
               {t('geoPhysics.main.title1noCaps')}
               <img src={logginTruck} />
               <Button
@@ -291,7 +292,7 @@ const LoggingTruck = () => {
               </div>
             </div>
           </div>
-          <div className="redBlock" />
+          <div className="redBlock2" />
         </div>
       </Container>
     </div>
