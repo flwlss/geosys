@@ -14,8 +14,8 @@ const Contacts = () => {
   const { t } = useTranslation();
 
   return (
-    <Container>
-      <div className="contacts">
+    <div className="contacts">
+      <Container>
         <div className="contactInfoWrapper">
           <div className="title">Контакты </div>
           <div className="contactInfoContent">
@@ -82,8 +82,8 @@ const Contacts = () => {
             </div>
           </div>
         </div>
-      </div>
-    </Container>
+      </Container>
+    </div>
   );
 };
 

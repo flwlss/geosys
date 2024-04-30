@@ -38,7 +38,13 @@ const Navbar = () => {
             >
               {t('navbar.about')}
             </p>
-            <p>{t('navbar.geophysics')}</p>
+            <p
+              onClick={() => {
+                navigate(PATHS.GEOPHYSICS);
+              }}
+            >
+              {t('navbar.geophysics')}
+            </p>
             <p
               onClick={() => {
                 navigate(PATHS.SPECIAL_EQUIPMENT);
