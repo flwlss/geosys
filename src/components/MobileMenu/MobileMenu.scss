@@ -29,7 +29,17 @@
     text-align: center;
     margin: 80px 0 100px 0;
 
+    &__activeItem {
+      margin-top: 24px;
+      white-space: pre-wrap;
+      text-decoration: underline;
+      text-decoration-color: #d11e12;
+      text-underline-offset: 8px;
+      cursor: pointer;
+    }
+
     p {
+      cursor: pointer;
       margin-top: 24px;
       white-space: pre-wrap;
     }

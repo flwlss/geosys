@@ -1,8 +1,8 @@
 export const PATHS = {
   ROOT: '/',
   ABOUT: '/about',
-  SPECIAL_EQUIPMENT: '/special-equpment',
-  EQUIPMENT: '/equpment',
+  SPECIAL_EQUIPMENT: '/special-equipment',
+  EQUIPMENT: '/equipment',
   CONTACTS: '/contacts',
   GEOPHYSICS: '/geophysics',
   GEOPHYSICS_LOGGING_TRACK: '/geophysics/loggingTrack',

@@ -1,6 +1,6 @@
 import './MobileMenu.scss';
 import Logo from '../../assets/images/logo.svg';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { PATHS } from '../../navigation/paths';
 import Button from '../Button/Button';
 import { useTranslation } from 'react-i18next';
@@ -17,6 +17,7 @@ const MobileMenu = ({ closeMenu }: MobileMenuProps) => {
   const { i18n } = useTranslation();
   const { isOpen, openModal, closeModal } = useModal();
   const lang = localStorage.getItem('lang');
+  const location = useLocation();
 
   const changeLg = (lang: string) => {
     localStorage.setItem('lang', lang);
@@ -30,6 +31,9 @@ const MobileMenu = ({ closeMenu }: MobileMenuProps) => {
         <img src={Logo} alt="logo" />
         <div className="menu__items">
           <p
+            className={
+              location.pathname === '/' ? 'menu__items__activeItem' : ''
+            }
             onClick={() => {
               navigate(PATHS.ROOT);
               closeMenu();
@@ -38,6 +42,11 @@ const MobileMenu = ({ closeMenu }: MobileMenuProps) => {
             {t('navbar.main')}
           </p>
           <p
+            className={
+              location.pathname.includes('/about')
+                ? 'menu__items__activeItem'
+                : ''
+            }
             onClick={() => {
               navigate(PATHS.ABOUT);
               closeMenu();
@@ -46,6 +55,11 @@ const MobileMenu = ({ closeMenu }: MobileMenuProps) => {
             {t('navbar.about')}
           </p>
           <p
+            className={
+              location.pathname.includes('/geophysics')
+                ? 'menu__items__activeItem'
+                : ''
+            }
             onClick={() => {
               navigate(PATHS.GEOPHYSICS);
               closeMenu();
@@ -54,6 +68,11 @@ const MobileMenu = ({ closeMenu }: MobileMenuProps) => {
             {t('navbar.geophysics')}
           </p>
           <p
+            className={
+              location.pathname.includes('equipment')
+                ? 'menu__items__activeItem'
+                : ''
+            }
             onClick={() => {
               navigate(PATHS.SPECIAL_EQUIPMENT);
               closeMenu();
@@ -62,6 +81,11 @@ const MobileMenu = ({ closeMenu }: MobileMenuProps) => {
             {t('navbar.supply')}
           </p>
           <p
+            className={
+              location.pathname.includes('/contacts')
+                ? 'menu__items__activeItem'
+                : ''
+            }
             onClick={() => {
               navigate(PATHS.CONTACTS);
               closeMenu();

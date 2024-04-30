@@ -9,9 +9,10 @@ import { useTranslation } from 'react-i18next';
 
 type SlideProps = {
   item: any;
+  opemModal: () => void;
 };
 
-const Slide = ({ item }: SlideProps) => {
+const Slide = ({ item, opemModal }: SlideProps) => {
   const [showCharacteristics, setShowCharacteristics] = useState(false);
   const [showSpecifications, setShowSpecifications] = useState(false);
   const { t } = useTranslation();
@@ -58,7 +59,7 @@ const Slide = ({ item }: SlideProps) => {
             </Swiper>
           </div>
           <div className="slide__btn">
-            <Button onClick={() => {}} text="Заказать" />
+            <Button onClick={opemModal} text={t('geoPhysics.main.button')} />
           </div>
         </div>
         <div className="slide__rightContent">

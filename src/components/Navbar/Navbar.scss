@@ -28,6 +28,20 @@
   &__items {
     display: flex;
 
+    &__activeItem {
+      text-align: center;
+      margin-right: 24px;
+      cursor: pointer;
+      white-space: pre-wrap;
+      text-decoration: underline;
+      text-decoration-color: #d11e12;
+      text-underline-offset: 8px;
+
+      &:last-child {
+        margin-right: 60px;
+      }
+    }
+
     p {
       text-align: center;
       margin-right: 24px;
@@ -90,6 +104,20 @@
     margin-top: 50px;
     justify-content: center;
     display: none;
+
+    &__activeItem {
+      margin-right: 24px;
+      text-align: center;
+      cursor: pointer;
+      white-space: pre-wrap;
+      text-decoration: underline;
+      text-decoration-color: #d11e12;
+      text-underline-offset: 8px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
 
     p {
       margin-right: 24px;

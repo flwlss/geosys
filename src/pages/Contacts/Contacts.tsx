@@ -17,7 +17,7 @@ const Contacts = () => {
     <div className="contacts">
       <Container>
         <div className="contactInfoWrapper">
-          <div className="title">Контакты </div>
+          <div className="title">{t('navbar.contacts')} </div>
           <div className="contactInfoContent">
             <div className="contactItem">
               <img src={geoDot} alt="" />

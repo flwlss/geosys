@@ -3,7 +3,7 @@ import Logo from '../../assets/images/logo.svg';
 import LangSelection from '../LangSelection/LangSelection';
 import Rectangle from '/src/assets/images/icons/rectangle.svg?react';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { PATHS } from '../../navigation/paths';
 import MobileMenu from '../MobileMenu/MobileMenu';
 import { useModal } from '../../common/helpers';
@@ -14,6 +14,7 @@ const Navbar = () => {
   const [showUnderMenu, setShowUnderMenu] = useState(false);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
   const { isOpen, openModal, closeModal } = useModal();
   const { t } = useTranslation();
 
@@ -32,6 +33,11 @@ const Navbar = () => {
         <div className="navbar__itemsWrapper">
           <div className="navbar__items">
             <p
+              className={
+                location.pathname.includes('/about')
+                  ? 'navbar__items__activeItem'
+                  : ''
+              }
               onClick={() => {
                 navigate(PATHS.ABOUT);
               }}
@@ -39,6 +45,11 @@ const Navbar = () => {
               {t('navbar.about')}
             </p>
             <p
+              className={
+                location.pathname.includes('/geophysics')
+                  ? 'navbar__items__activeItem'
+                  : ''
+              }
               onClick={() => {
                 navigate(PATHS.GEOPHYSICS);
               }}
@@ -46,6 +57,11 @@ const Navbar = () => {
               {t('navbar.geophysics')}
             </p>
             <p
+              className={
+                location.pathname.includes('equipment')
+                  ? 'navbar__items__activeItem'
+                  : ''
+              }
               onClick={() => {
                 navigate(PATHS.SPECIAL_EQUIPMENT);
               }}
@@ -53,6 +69,11 @@ const Navbar = () => {
               {t('navbar.supply')}
             </p>
             <p
+              className={
+                location.pathname.includes('/contacts')
+                  ? 'navbar__items__activeItem'
+                  : ''
+              }
               onClick={() => {
                 navigate(PATHS.CONTACTS);
               }}
@@ -84,21 +105,53 @@ const Navbar = () => {
       {showUnderMenu && (
         <div className="navbar__underMenu">
           <p
+            className={
+              location.pathname.includes('/about')
+                ? 'navbar__underMenu__activeItem'
+                : ''
+            }
             onClick={() => {
               navigate(PATHS.ABOUT);
             }}
           >
             {t('navbar.about')}
           </p>
-          <p>{t('navbar.geophysics')}</p>
           <p
+            className={
+              location.pathname.includes('/geophysics')
+                ? 'navbar__underMenu__activeItem'
+                : ''
+            }
+            onClick={() => {
+              navigate(PATHS.GEOPHYSICS);
+            }}
+          >
+            {t('navbar.geophysics')}
+          </p>
+          <p
+            className={
+              location.pathname.includes('equipment')
+                ? 'navbar__underMenu__activeItem'
+                : ''
+            }
             onClick={() => {
               navigate(PATHS.SPECIAL_EQUIPMENT);
             }}
           >
             {t('navbar.supply')}
           </p>
-          <p>{t('navbar.contacts')}</p>
+          <p
+            className={
+              location.pathname.includes('/contacts')
+                ? 'navbar__underMenu__activeItem'
+                : ''
+            }
+            onClick={() => {
+              navigate(PATHS.CONTACTS);
+            }}
+          >
+            {t('navbar.contacts')}
+          </p>
         </div>
       )}
       {showMobileMenu && (

@@ -4,8 +4,11 @@ import './styles.css';
 import { Navigation } from 'swiper/modules';
 import Slide from './Slide';
 import { equipments } from '../../common/mocks';
+import { useModal } from '../../common/helpers';
+import Modal from '../Modal/Modal';
 
 const EquipmentSwiper = () => {
+  const { isOpen, openModal, closeModal } = useModal();
   return (
     <Swiper
       navigation={{
@@ -17,10 +20,11 @@ const EquipmentSwiper = () => {
       allowTouchMove={false}
       className="mySwiper"
     >
+      {isOpen && <Modal closeModal={closeModal} />}
       {equipments().map((item, index) => {
         return (
           <SwiperSlide key={index}>
-            <Slide item={item} />
+            <Slide opemModal={openModal} item={item} />
           </SwiperSlide>
         );
       })}
