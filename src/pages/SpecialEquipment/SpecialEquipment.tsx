@@ -2,7 +2,6 @@ import Container from '../../components/Container/Container';
 import Marker from '../../components/Marker/Marker';
 import './SpecialEquipment.scss';
 import Naffco from '/src/assets/images/icons/naffco.svg?react';
-import Rectangle from '/src/assets/images/icons/rectangle.svg?react';
 import Arrow from '/src/assets/images/icons/arrow.svg?react';
 import Checkmark from '/src/assets/images/icons/checkmark.svg?react';
 import Settings from '/src/assets/images/icons/settings.svg?react';
@@ -33,7 +32,7 @@ const SpecialEquipment = () => {
               </p>
               <div className="specialEquipment__leftContent__flagWrapper">
                 <div className="specialEquipment__leftContent__flag">
-                  <Rectangle className="specialEquipment__leftContent__rectangle" />
+                  <div className="specialEquipment__leftContent__rectangle" />
                   <div
                     onClick={() => {
                       navigate(PATHS.EQUIPMENT);

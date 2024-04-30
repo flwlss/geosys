@@ -49,6 +49,7 @@
     &__flagWrapper {
       display: flex;
       justify-content: flex-end;
+      overflow: hidden;
     }
 
     &__flag {
@@ -56,6 +57,19 @@
       display: flex;
       align-items: center;
       position: relative;
+      padding-right: 20px;
+
+      &:hover {
+        .specialEquipment {
+          &__leftContent {
+            &__rectangle {
+              border: 300px solid transparent;
+              border-left: 300px solid #d11e12;
+              border-top: 300px solid #d11e12;
+            }
+          }
+        }
+      }
 
       p {
         margin: 0 6px 0 20px;
@@ -66,10 +80,15 @@
 
     &__rectangle {
       position: absolute;
+      border: 30px solid transparent;
+      border-left: 30px solid #d11e12;
+      border-top: 30px solid #d11e12;
+      transition: 0.8s;
 
       &__btn {
         display: flex;
         cursor: pointer;
+        z-index: 2;
       }
     }
   }

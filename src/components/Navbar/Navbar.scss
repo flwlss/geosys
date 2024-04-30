@@ -66,8 +66,33 @@
     display: flex;
     position: relative;
 
+    &__rectangle {
+      position: absolute;
+      border: 22px solid transparent;
+      border-left: 22px solid #d11e12;
+      border-top: 22px solid #d11e12;
+      transition: 0.8s;
+    }
+
     &__request {
       display: flex;
+      position: relative;
+      overflow: hidden;
+      align-items: center;
+      height: 100%;
+      top: -10px;
+
+      &:hover {
+        .navbar {
+          &__actions {
+            &__rectangle {
+              border: 300px solid transparent;
+              border-left: 300px solid #d11e12;
+              border-top: 300px solid #d11e12;
+            }
+          }
+        }
+      }
 
       svg {
         position: absolute;
@@ -75,16 +100,10 @@
       }
 
       p {
-        margin-left: 20px;
+        margin: 0 20px;
         z-index: 1;
         cursor: pointer;
         height: fit-content;
-
-        &:hover {
-          text-decoration: underline;
-          text-decoration-color: #d11e12;
-          text-underline-offset: 8px;
-        }
       }
     }
 
@@ -155,6 +174,18 @@
     &__actions {
       height: 60px;
       align-items: center;
+
+      &__rectangle {
+        position: absolute;
+        border: 30px solid transparent;
+        border-left: 30px solid #d11e12;
+        border-top: 30px solid #d11e12;
+        transition: 0.8s;
+      }
+
+      &__request {
+        top: 0;
+      }
 
       &__menu {
         display: block;

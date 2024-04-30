@@ -1,7 +1,6 @@
 import './Navbar.scss';
 import Logo from '../../assets/images/logo.svg';
 import LangSelection from '../LangSelection/LangSelection';
-import Rectangle from '/src/assets/images/icons/rectangle.svg?react';
 import { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { PATHS } from '../../navigation/paths';
@@ -84,7 +83,7 @@ const Navbar = () => {
           <div className="navbar__actions">
             <LangSelection />
             <div className="navbar__actions__request">
-              <Rectangle />
+              <div className="navbar__actions__rectangle" />
               <p onClick={openModal}>{t('navbar.request')}</p>
             </div>
             <p

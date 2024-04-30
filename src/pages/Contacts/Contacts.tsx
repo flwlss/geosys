@@ -1,6 +1,5 @@
 import Container from '../../components/Container/Container';
 import geoDot from '../../assets/images/icons/geoDot.svg';
-import Rectangle2 from '/src/assets/images/icons/rectangle2.svg?react';
 import email from '../../assets/images/icons/email.svg';
 import phone from '../../assets/images/icons/phone.svg';
 import Arrow from '/src/assets/images/icons/arrow.svg?react';
@@ -71,7 +70,7 @@ const Contacts = () => {
               />
               {width > 560 ? (
                 <div className="buttonWrapper">
-                  <Rectangle2 className="rectangle" />
+                  <div className="rectangle" />
                   <div className="button">
                     {t('contacts.send')} <Arrow className="arrow" />
                   </div>
