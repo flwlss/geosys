@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import { PATHS } from './paths';
 import MainPage from '../pages/MainPage/MainPage';
 import AboutPage from '../pages/AboutPage/AboutPage';
@@ -12,6 +12,7 @@ import SkidMountedUnit from '../pages/SkidMountedUnit/SkidMountedUnit';
 const Router = () => {
   return (
     <Routes>
+      <Route path={'*'} element={<Navigate to={PATHS.ROOT} />} />
       <Route path={PATHS.ROOT} element={<MainPage />} />
       <Route path={PATHS.ABOUT} element={<AboutPage />} />
       <Route path={PATHS.SPECIAL_EQUIPMENT} element={<SpecialEquipment />} />
