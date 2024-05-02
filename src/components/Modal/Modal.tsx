@@ -11,7 +11,12 @@ const Modal: React.FC<Props> = ({ closeModal }) => {
   const { t } = useTranslation();
 
   return (
-    <div className="modal">
+    <div
+      onClick={(e) => {
+        e.stopPropagation();
+      }}
+      className="modal"
+    >
       <div className="modalWrapper">
         <Close
           style={{ cursor: 'pointer' }}

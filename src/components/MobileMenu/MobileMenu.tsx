@@ -6,6 +6,7 @@ import Button from '../Button/Button';
 import { useTranslation } from 'react-i18next';
 import { useModal } from '../../common/helpers';
 import Modal from '../Modal/Modal';
+import Cross from '/src/assets/images/icons/cross.svg?react';
 
 type MobileMenuProps = {
   closeMenu: () => void;
@@ -25,9 +26,15 @@ const MobileMenu = ({ closeMenu }: MobileMenuProps) => {
   };
 
   return (
-    <div className="menuModal">
+    <div onClick={closeMenu} className="menuModal">
       {isOpen && <Modal closeModal={closeModal} />}
-      <div className="menu">
+      <div
+        onClick={(e) => {
+          e.stopPropagation();
+        }}
+        className="menu"
+      >
+        <Cross onClick={closeMenu} className="menu__cross" />
         <img src={Logo} alt="logo" />
         <div className="menu__items">
           <p
