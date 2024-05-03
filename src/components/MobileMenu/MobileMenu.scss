@@ -22,6 +22,10 @@
   padding: 50px 60px;
   overflow: auto;
 
+  &__cross {
+    display: none;
+  }
+
   &__items {
     display: flex;
     flex-direction: column;
@@ -57,6 +61,13 @@
 @media screen and (max-width: 767px) {
   .menu {
     width: 100%;
+
+    &__cross {
+      position: absolute;
+      display: block;
+      top: 24px;
+      right: 16px;
+    }
 
     &__lang {
       margin-top: 40px;
