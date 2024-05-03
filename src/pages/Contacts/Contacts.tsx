@@ -28,10 +28,10 @@ const Contacts = () => {
               <img src={email} alt="" />
               info@geosys-uae.com
             </div>
-            <div className="contactItem">
+            <a href="tel:+971585889505" className="contactItem">
               <img src={phone} alt="" />
               {t('contacts.phone')}
-            </div>
+            </a>
           </div>
         </div>
         <div className="sendWrapper">
