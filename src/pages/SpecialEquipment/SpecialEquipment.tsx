@@ -10,10 +10,16 @@ import { useNavigate } from 'react-router-dom';
 import { PATHS } from '../../navigation/paths';
 import { useTranslation } from 'react-i18next';
 import Number4 from '/src/assets/images/icons/number4.svg?react';
+import documentImage from '../../assets/document.png';
+import AuthorizationLetter from '../../assets/documents/Authorization Letter.pdf';
 
 const SpecialEquipment = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
+
+  const openAuthorizationLetter = () => {
+    window.open(AuthorizationLetter, '_blank');
+  };
 
   return (
     <div className="specialEquipment">
@@ -31,6 +37,16 @@ const SpecialEquipment = () => {
                 {t('specialEquipmentPage.subtext')}
               </p>
               <div className="specialEquipment__leftContent__flagWrapper">
+                <div
+                  onClick={openAuthorizationLetter}
+                  className="specialEquipment__leftContent__documentWrapper"
+                >
+                  <img src={documentImage} alt="documentImage" />
+                  <div>
+                    Authorization letter <br />
+                    (PDF)
+                  </div>
+                </div>
                 <div className="specialEquipment__leftContent__flag">
                   <div className="specialEquipment__leftContent__rectangle" />
                   <div
