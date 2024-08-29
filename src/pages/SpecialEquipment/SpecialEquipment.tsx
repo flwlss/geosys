@@ -43,7 +43,7 @@ const SpecialEquipment = () => {
                 >
                   <img src={documentImage} alt="documentImage" />
                   <div>
-                    Authorization letter <br />
+                    {t('specialEquipmentPage.authLetter')} <br />
                     (PDF)
                   </div>
                 </div>
