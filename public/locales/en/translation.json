@@ -23,9 +23,9 @@
     "text": "is among the leading manufacturers of measuring and logging trucks, geophysical equipment and special purpose vehicles"
   },
   "aboutPage": {
-    "startLeftText": "The German company",
-    "endLeftText": "was established in 1990 in Leipzig, formerly a subsidiary of VEB Geophysik Leipzig, the largest company implementing geophysical methods of mineral exploration in Germany. Thus, the establishment of Geo Sys allowed for the continuation of Leipzig's longstanding tradition of geophysical instrumentation manufacturing.",
-    "rightText": "The company specializes in manufacturing logging trucks, marine containers, geophysical measuring devices, modular logging units, and is steadily expanding its market presence. Thanks to its long experience, Geo Sys brand has become well-known in Central and Eastern Europe, Central Asia, and the Middle East.\n\nNowadays, Geo Sys products are deservedly considered a standard of quality and are associated with uniqueness, expertise, and technological innovation in the production of machinery, equipment, and devices for the oil and gas industry.\n\nIn January 2024, Geo Sys Germany identified its successor — Geo Sys Middle East, granting it the exclusive rights to manufacture and sell logging trucks and modular logging units. Currently, industrial manufacture is concentrated in Dubai, United Arab Emirates."
+    "startLeftText": "",
+    "endLeftText": "is the leading manufacturer of measuring and logging trucks, geophysical equipment and special purpose vehicles.The German company Geo Sys GmbH was established in 1990 in Leipzig, formerly a subsidiary of VEB Geophysik Leipzig, the largest GDR organization specializing in geophysical exploration of mineral deposits in East Germany. The establishment of Geo Sys became a natural continuation of the longstanding tradition of geophysical instrumentation manufacturing in Germany.",
+    "rightText": "The company specializes in manufacturing mobile logging trucks on commercial truck chassis, stationary logging units based on shipping containers, geophysical measuring devices and modular logging units. GeoSys is successfully expanding its market presence. Due to years of work and accumulated experience, Geo Sys brand has become well-known in Europe, Transcaucasia, Central Asia and the Middle East.\n\nNowadays, Geo Sys products are deservedly considered a standard of quality and associated with uniqueness, expertise, and technological innovation in the production of machinery, equipment, and devices for the oil and gas industry.\n\nDue to the expansion of activities and development of the sales geography of our products, the company’s key production facilities are located at GEOSYS Middle East in Dubai, United Arab Emirates."
   },
   "specialEquipmentPage": {
     "title": "Delivery of NAFFCO equipment",
@@ -97,6 +97,7 @@
       "title1": "LOGGING TRUCK",
       "title1noCaps": "LOGGING TRUCK",
       "title2": "SKID-MOUNTED UNIT",
+      "title2noCaps": "SKID-MOUNTED UNIT",
       "button": "Contact Us to Purchase"
     },
     "navigation": {
@@ -110,7 +111,7 @@
         "text2": "Depending on the depth of study and types of cables used, Geo Sys Middle East manufactures various types of logging trucks, ranging from small units to high-capacity ones with a capacity of up to 11 tons (24,000 lbs).",
         "text3": "Geo Sys ME manufactures logging trucks of various configurations, tailored to the individual needs of the customers",
         "text4": "Logging trucks are designed to operate in temperatures ranging from -40°C to +50°C. Geo Sys units are successfully used in polar, tropical, and desert regions worldwide.",
-        "text5": "Geo Sys logging truck comprises a chassis and a box van made as per customer specifications. Mounting on any chassis is achievable using subframes. The setup is divided into two parts. The winch is located in the technical compartment. The laboratory houses the operator's control panel and various geophysical acquisition and interpretation equipment. Additionally, the laboratory is provided with furniture, appliances, and instruments to ensure comfortable conditions for staff."
+        "text5": "Geo Sys ME manufactures logging trucks of various configurations, tailored to the individual needs of the customers. Geo Sys mobile logging truck comprises a chassis and a technical section made and equipped as per customer specifications. The equipment can be installed on commercial and special chassis of leading world manufacturers - Mercedes, MAN, Scania, Iveco etc. The setup of special equipment is divided into two parts. The winch and other support/ associated equipment is located in the technical compartment, the laboratory houses the operator's control panel and various geophysical measurement and analysis equipment. Additionally, the laboratory is provided with furniture, household appliances, and instruments to ensure comfortable conditions for staff."
       },
       "techSpec": {
         "width": "Width",
@@ -131,19 +132,19 @@
       },
       "techChar": {
         "title1": "Trucks are designed for difficult terrain conditions.",
-        "text1": "Logging trucks are equipped with a full-drive system for off-road and sand driving.",
+        "text1": "Logging trucks are equipped with a full-drive system and have an increased cross-country ability for off-road driving which is indispensable for field exploration.",
         "title2": "Technical features",
-        "text2": "- Long life hydraulic components up to 400 bar\n- Planetary gear built in the drum (no chain necessary)\n- Disk brake built in the planetary gear\n- Three-step cable cleaner (mechanical, compressed air, steam)\n- Depth correction by magnetic marks\n- Single, double or split drums available\n- Maintenance free multicontact mercury collector\n- Cable spooler with measuring head incl. depth encoder, tension sensor, magnetic mark system",
-        "title3": "Designed for use in most environments",
-        "text3": "-Fully insulated\n-Special under-floor heating for the lab\n-CFC-free air condition\n-Special coated and shielded roof to prevent cabin from overheating",
+        "text2": "- Reliable hydraulic components operating under pressure up to 400 bar\n- Planetary gear built in the winch drum (no chain gear)\n- Disk brake built in the planetary gear\n- Three-step cable cleaner (mechanical, compressed air, steam)\n- Depth monitoring and correction by magnetic mark reading \n- Single, double or split drums available\n- Maintenance free multicontact mercury collector during its entire service life\n- Cable spooler with measuring head incl. depth encoder, tension sensor, magnetic mark system",
+        "title3": "Designed for use in various environments",
+        "text3": "-Technical compartment is heat-insulated\n-The floors in the laboratory are equipped with air heating system \n-Laboratory room equipped with air conditioning\n-Roof with special heat-insulating covering to prevent cabin from overheating ",
         "title4": "Self-contained for remote operations",
-        "text4": "- Hydraulic winch powered by PTO of main truck engine\n- Дизельный или гидравлический генератор для бортового электропитания\n- Kitchen unit with fresh water tank\n- Sleeping places provided"
+        "text4": "- Hydraulic winch powered by PTO of main truck engine\n- Diesel or hydraulic generator for power supply \n- Kitchen unit equipped with household appliances and fresh water tank\n- Sleeping places provided"
       },
       "techChar2": {
         "title1": "Safety and maintenance",
         "text1": "- Direct-driven  hydraulic winch (without chains and gear-down mechanisms)\n- Hydraulic driven brakes\n- Automatic cable layer\n- Cable lubrication system\n- Drip pan assembled under the winch\n- Transport niches and equipment for measuring instruments\n- Black box which records each second or minute the cable speed, tension, depth, date and time",
         "title2": "Depth computer",
-        "text2": "- Depth reading in meters or feet\n- Tension reading in kN or lbf\n- Speed reading in m/h or fpm\n- Automatic winch operation mode with pre-set speed (constant speed regardless of the full or empty drum)\n- Automatic  shutdown in case of exceeding max. tension\n- Automatic shutdown in case of exceeding min./max. depth\n- Automatic shutdown at relief of cable to avoid loops\n- Integrated function for depth and tension calibration",
+        "text2": "- Depth indicator in meters or feet\n- Tension indicator in kN or lbf\n- Speed indicator in m/h or fpm\n- Automatic winch drive with pre-set speed (constant speed, independent full or empty drum)\n- Automatic  shutdown in case of exceeding max. tension\n- Automatic shutdown in case of exceeding min./max. depth\n- Automatic shutdown in case of cable loops formation threat \n- Integrated function for depth and tension calibration",
         "title3": "Logging truck for logging operations in horizontal wells.",
         "text3": "A specialized measuring cable with a diameter of 21–32 mm is used for data transmission and power supply. Its special outer steel armour enables the transportation of the instruments."
       }
@@ -151,18 +152,18 @@
     "skidMountedUnit": {
       "general": {
         "text1": "Skid logging unit is used for the descent and ascent of downhole tools during geophysical studies and operations in the construction and operation of oil and gas wells.",
-        "text2": "The skid unit has been designed to withstand temperatures ranging from -40°C to +50°C.",
-        "text3": "It is divided into three compartments, the container contains a winch skid, a lab designed to house the control panel for the winch and enough space for any required acquisition and interpretation equipment, and the control panel. An additional compartment for extra equipment is also available."
+        "text2": "The skid unit has been designed to withstand temperatures ranging from -45°C to +50°C.",
+        "text3": "Technical section is divided into three compartments: the container contains a winch skid, a lab designed to house the control panel for the winch and enough space for any required acquisition and interpretation equipment and the power Skid."
       },
       "techChar": {
         "title1": "Technical features",
-        "text1": "- Long life hydraulic components up to 400 bar\n- Planetary gear built in the drum (no chain necessary)\n- Disk brake built in the planetary gear\n- Three-step cable cleaner (mechanical, compressed air, steam\n- Depth correction by magnetic marks\n- Single, double or split drums available\n- Maintenance free multicontact mercury collector",
+        "text1": "- Reliable hydraulic components operating under pressure up to 400 bar\n- Planetary drive of the winch drum (no chain gear)\n- Disk brake built in the planetary gear\n- Three-step cable cleaner (mechanical, pressure  air, steam\n- Depth monitoring and correction by magnetic marks reading\n- Single, double or split drums available\n- Multi-contact mercury collector, requiring no maintenance during its entire service life\n- Cable spoolerwith measuring head incl. depth encoder, tension sensor, magnetic mark system",
         "title2": "Performance capabilities",
-        "text2": "- For transportation by helicopter\n- Can be used as a sea container with a turning facility\n-Skid units for arctic, desert or offshore operations available.\n",
-        "title3": "Designed for use in most environments",
-        "text3": "- Fully insulated\n- Laboratory floors are equipped with a heating system\n- CFC-free air condition\n- Special coated and shielded roof to prevent cabin from overheating",
+        "text2": "- Transportation  of containers by helicopter on the suspension \n- Sea container with a turning facility\n- Skid units for arctic, desert or offshore operations available.\n",
+        "title3": "Designed for use in various environments",
+        "text3": "- Technical compartment is heat-insulated \n- The floors in the laboratory are equipped with air heating system \n- Laboratory room equipped with air conditioning\n- Roof with special heat-insulating covering to prevent cabin from heating",
         "title4": "Self-contained for remote operations",
-        "text4": "- Hydraulic winch powered by electrical or diesel power unit\n- Diesel generator for lighting\n- Compartments provided for necessary logging tools\n- Kitchen unit with fresh water tank\n- Sleeping places provided"
+        "text4": "- Hydraulic winch powered by electrical or diesel power unit\n- Diesel generator for lighting and power supply laboratory\n- Compartments provided for necessary logging tools\n- Kitchen unit with fresh water tank\n- Sleeping places provided"
       },
       "techSpec": {
         "width": "Width",
@@ -183,9 +184,9 @@
       },
       "techSpec2": {
         "title1": "Safety and maintenance",
-        "text1": "•   Direct winch (without chains or other movable components)\n•   Hydraulic driven brakes\n•   Cable spooler for regulated coiling of the cable\n•   Cable lubrication system\n•   Drip pan assembled under the winch\n•   Transport devices for the logging tools\n•   Blackbox that records cable speeds, tension, depth, date, and time (in seconds or minutes)",
+        "text1": "•   Direct hydraulic drive winch (without chains or other movable components) \n•   Hydraulic driven brakes\n•   Cable spooler for regulated coiling of the cable\n•   Cable lubrication system\n•   Drip pan assembled under the winch\n•   Transport devices for the logging tools\n•   Black box that records cable speeds, tension, depth, date, and time ",
         "title2": "Depth computer",
-        "text2": "•   Depth reading in meters or feet\n•   Tension reading in kN or lbf\n•   Speed reading in m/h or fpm\n•   Automatic winch operation mode with pre-set speed (constant speed regardless of the full or empty drum\n•   Automatic shutdown in case of exceeding max. tension\n•   Automatic shutdown in case of exceeding min./max.depth \n•   Automatic shutdown at relief of cable to avoid loops"
+        "text2": "•   Depth indicator in meters or feet\n•   Tension indicator in kN or lbf\n•   Speed indicator in m/h or fpm\n•   Automatic winch operation mode with pre-set speed (constant speed regardless of the full or empty drum\n•   Automatic shutdown in case of exceeding max. tension\n•   Automatic shutdown in case of exceeding min./max.depth \n•   Automatic shutdown in case of cable loops formation threatIntegrated function for depth and tension calibration"
       }
     }
   }

@@ -34,8 +34,8 @@ const SkidMountedUnit = () => {
           </div>
           <div className="content">
             <div className="truck">
-            <div className="redBlock" />
-              SKID-MOUNTED UNIT
+              <div className="redBlock" />
+              {t('geoPhysics.main.title2noCaps')}
               <img src={skidMountedUnit} />
               <Button
                 text={t('geoPhysics.main.button')}
