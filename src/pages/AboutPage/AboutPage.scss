@@ -30,6 +30,7 @@
     @include responsive-size(padding-right, 16px, 60px, 60px, 60px, 100px);
 
     &__leftText {
+      white-space: pre-wrap;
       @include responsive-size(font-size, 20px, 20px, 20px, 24px, 24px);
       width: 633px;
       margin-right: 237px;

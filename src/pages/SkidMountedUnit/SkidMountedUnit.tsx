@@ -150,11 +150,29 @@ const SkidMountedUnit = () => {
                     </div>
                     <div className="techCharText2">
                       <span>
+                        {t('geoPhysics.skidMountedUnit.techSpec2.title1')}
+                      </span>
+                      <br />
+                      <div className="mainText">
+                        {t('geoPhysics.skidMountedUnit.techSpec2.text1')}
+                      </div>
+                    </div>
+                    <div className="techCharText2">
+                      <span>
                         {t('geoPhysics.skidMountedUnit.techChar.title4')}
                       </span>
                       <br />
                       <div className="mainText">
                         {t('geoPhysics.skidMountedUnit.techChar.text4')}
+                      </div>
+                    </div>
+                    <div className="techCharText2">
+                      <span>
+                        {t('geoPhysics.skidMountedUnit.techSpec2.title2')}
+                      </span>
+                      <br />
+                      <div className="mainText">
+                        {t('geoPhysics.skidMountedUnit.techSpec2.text2')}
                       </div>
                     </div>
                   </>
