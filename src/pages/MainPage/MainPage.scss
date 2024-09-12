@@ -12,13 +12,13 @@
 
   &__content {
     position: absolute;
-    @include responsive-size(bottom, 83px, 290px, 112px, 144px, 325px);
+    @include responsive-size(bottom, 217px, 290px, 112px, 144px, 325px);
     @include responsive-size(padding-left, 16px, 60px, 60px, 60px, 100px);
     @include responsive-size(padding-right, 16px, 60px, 60px, 60px, 100px);
     width: 1050px;
 
     p {
-      @include responsive-size(font-size, 24px, 32px, 32px, 32px, 32px);
+      @include responsive-size(font-size, 18px, 32px, 32px, 32px, 32px);
 
       span {
         font-family: 'Montserrat Bold';

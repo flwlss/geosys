@@ -188,19 +188,19 @@ const SkidMountedUnit = () => {
                       <div className="techChar">
                         {t('geoPhysics.skidMountedUnit.techSpec.height')}
                       </div>
-                      <div className="techCharValue">3.891 m (12.840 ft)</div>
+                      <div className="techCharValue">2.200 m (7.210 ft)</div>
                     </div>
                     <div className="techSpecItem">
                       <div className="techChar">
                         {t('geoPhysics.skidMountedUnit.techSpec.width')}
                       </div>
-                      <div className="techCharValue">2.493 m (8.277 ft)</div>
+                      <div className="techCharValue">2.493 m (8.227 ft)</div>
                     </div>
                     <div className="techSpecItem">
                       <div className="techChar">
                         {t('geoPhysics.skidMountedUnit.techSpec.length')}
                       </div>
-                      <div className="techCharValue">8.979 m (29.630 ft)</div>
+                      <div className="techCharValue">7.000 m (22.950 ft)</div>
                     </div>
                     <div className="techSpecItem">
                       <div className="techChar">

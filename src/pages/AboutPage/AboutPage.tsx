@@ -15,7 +15,8 @@ const AboutPage = () => {
           <Marker title={t('navbar.about')} />
           <div className="about__textWrapper">
             <p className="about__textWrapper__leftText">
-              {t('aboutPage.startLeftText')} <span>Geo Sys</span>{' '}
+              {t('aboutPage.startLeftText')}
+              <span> Geo Sys</span>
               {t('aboutPage.endLeftText')}
             </p>
             <p className="about__textWrapper__rightText">
