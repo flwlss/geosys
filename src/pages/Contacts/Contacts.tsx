@@ -81,6 +81,10 @@ const Contacts = () => {
                 </button>
               )}
             </div>
+            <div className="agreeWrapper">
+              <input className='checkbox' type="checkbox" />
+              <div className='agreeContent'> {t('contacts.agree')}</div>
+            </div>
           </div>
         </div>
       </Container>
