@@ -38,7 +38,7 @@ const LoggingTruck = () => {
               {t('geoPhysics.main.title1noCaps')}
               <img src={logginTruck} />
               <Button
-                text={t('geoPhysics.main.button')}
+                text={t('geoPhysics.main.button2')}
                 onClick={() => {
                   openModal();
                 }}
@@ -50,53 +50,28 @@ const LoggingTruck = () => {
                   onClick={() => setNav(1)}
                   className={nav === 1 ? 'navInfoItemActive' : 'navInfoItem'}
                 >
-                  {nav === 1 ? (
-                    <div className="item">
-                      <div className="redDot" />
-                      {t('geoPhysics.navigation.mainInformation')}
-                    </div>
-                  ) : (
-                    '01'
-                  )}
+                  <div className="item">
+                    <div className="redDot" />
+                    {t('geoPhysics.navigation.mainInformation')}
+                  </div>
                 </div>
                 <div
                   onClick={() => setNav(2)}
                   className={nav === 2 ? 'navInfoItemActive' : 'navInfoItem'}
                 >
-                  {nav === 2 ? (
-                    <div className="item">
-                      <div className="redDot" />
-                      {t('geoPhysics.navigation.technicalFeatures')}
-                    </div>
-                  ) : (
-                    '02'
-                  )}
+                  <div className="item">
+                    <div className="redDot" />
+                    {t('geoPhysics.navigation.technicalFeatures')}
+                  </div>
                 </div>
                 <div
                   onClick={() => setNav(3)}
                   className={nav === 3 ? 'navInfoItemActive' : 'navInfoItem'}
                 >
-                  {nav === 3 ? (
-                    <div className="item">
-                      <div className="redDot" />
-                      {t('geoPhysics.navigation.specifications')}
-                    </div>
-                  ) : (
-                    '03'
-                  )}
-                </div>
-                <div
-                  onClick={() => setNav(4)}
-                  className={nav === 4 ? 'navInfoItemActive' : 'navInfoItem'}
-                >
-                  {nav === 4 ? (
-                    <div className="item">
-                      <div className="redDot" />{' '}
-                      {t('geoPhysics.navigation.specifications')}
-                    </div>
-                  ) : (
-                    '04'
-                  )}
+                  <div className="item">
+                    <div className="redDot" />
+                    {t('geoPhysics.navigation.specifications')}
+                  </div>
                 </div>
               </div>
               <div className="infoContent">
@@ -127,43 +102,78 @@ const LoggingTruck = () => {
                 )}
                 {nav === 2 && (
                   <>
-                    <div className="techCharText1">
-                      <Warn />
-                      <div className="textInfo">
+                    <>
+                      <div className="techCharText1">
+                        <Warn />
+                        <div className="textInfo">
+                          <span>
+                            {t('geoPhysics.loggingTrack.techChar.title1')}
+                          </span>
+                          <br />
+                          {t('geoPhysics.loggingTrack.techChar.text1')}
+                        </div>
+                      </div>
+                      <div className="techCharText2">
                         <span>
-                          {t('geoPhysics.loggingTrack.techChar.title1')}
+                          {t('geoPhysics.loggingTrack.techChar.title2')}
                         </span>
                         <br />
-                        {t('geoPhysics.loggingTrack.techChar.text1')}
+                        <div className="mainText">
+                          {t('geoPhysics.loggingTrack.techChar.text2')}
+                        </div>
                       </div>
-                    </div>
-                    <div className="techCharText2">
-                      <span>
-                        {t('geoPhysics.loggingTrack.techChar.title2')}
-                      </span>
-                      <br />
-                      <div className="mainText">
-                        {t('geoPhysics.loggingTrack.techChar.text2')}
+                      <div className="techCharText2">
+                        <span>
+                          {t('geoPhysics.loggingTrack.techChar.title3')}
+                        </span>
+                        <br />
+                        <div className="mainText">
+                          {t('geoPhysics.loggingTrack.techChar.text3')}
+                        </div>
                       </div>
-                    </div>
-                    <div className="techCharText2">
-                      <span>
-                        {t('geoPhysics.loggingTrack.techChar.title3')}
-                      </span>
-                      <br />
-                      <div className="mainText">
-                        {t('geoPhysics.loggingTrack.techChar.text3')}
+                      <div className="techCharText2">
+                        <span>
+                          {t('geoPhysics.loggingTrack.techChar.title4')}
+                        </span>
+                        <br />
+                        <div className="mainText">
+                          {t('geoPhysics.loggingTrack.techChar.text4')}
+                        </div>
                       </div>
-                    </div>
-                    <div className="techCharText2">
-                      <span>
-                        {t('geoPhysics.loggingTrack.techChar.title4')}
-                      </span>
-                      <br />
-                      <div className="mainText">
-                        {t('geoPhysics.loggingTrack.techChar.text4')}
+                    </>
+                    <>
+                      <div className="techCharText2">
+                        <span>
+                          {t('geoPhysics.loggingTrack.techChar2.title1')}
+                        </span>
+                        <br />
+                        <div className="mainText">
+                          {t('geoPhysics.loggingTrack.techChar2.text1')}
+                        </div>
                       </div>
-                    </div>
+                      <div className="techCharText2">
+                        <span>
+                          {t('geoPhysics.loggingTrack.techChar2.title2')}
+                        </span>
+                        <br />
+                        <div className="mainText">
+                          {t('geoPhysics.loggingTrack.techChar2.text2')}
+                        </div>
+                      </div>
+
+                      <div className="techCharText1">
+                        <Warn />
+                        <div className="textInfo">
+                          <span>
+                            {t('geoPhysics.loggingTrack.techChar2.title3')}
+                          </span>
+                          <br />
+                          <div className="textInfoContent">
+                            {t('geoPhysics.loggingTrack.techChar2.text3')}
+                          </div>
+                        </div>
+                      </div>
+                    </>
                   </>
                 )}
                 {nav === 3 && (
@@ -251,41 +261,6 @@ const LoggingTruck = () => {
                     </div>
                     <div className="techSpec1">
                       {t('geoPhysics.loggingTrack.techSpec.drumWork')}
-                    </div>
-                  </>
-                )}
-                {nav === 4 && (
-                  <>
-                    <div className="techCharText2">
-                      <span>
-                        {t('geoPhysics.loggingTrack.techChar2.title1')}
-                      </span>
-                      <br />
-                      <div className="mainText">
-                        {t('geoPhysics.loggingTrack.techChar2.text1')}
-                      </div>
-                    </div>
-                    <div className="techCharText2">
-                      <span>
-                        {t('geoPhysics.loggingTrack.techChar2.title2')}
-                      </span>
-                      <br />
-                      <div className="mainText">
-                        {t('geoPhysics.loggingTrack.techChar2.text2')}
-                      </div>
-                    </div>
-
-                    <div className="techCharText1">
-                      <Warn />
-                      <div className="textInfo">
-                        <span>
-                          {t('geoPhysics.loggingTrack.techChar2.title3')}
-                        </span>
-                        <br />
-                        <div className="textInfoContent">
-                          {t('geoPhysics.loggingTrack.techChar2.text3')}
-                        </div>
-                      </div>
                     </div>
                   </>
                 )}

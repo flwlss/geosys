@@ -38,7 +38,7 @@ const SkidMountedUnit = () => {
               {t('geoPhysics.main.title2noCaps')}
               <img src={skidMountedUnit} />
               <Button
-                text={t('geoPhysics.main.button')}
+                text={t('geoPhysics.main.button2')}
                 onClick={() => {
                   openModal();
                 }}
@@ -50,53 +50,28 @@ const SkidMountedUnit = () => {
                   onClick={() => setNav(1)}
                   className={nav === 1 ? 'navInfoItemActive' : 'navInfoItem'}
                 >
-                  {nav === 1 ? (
-                    <div className="item">
-                      <div className="redDot" />
-                      {t('geoPhysics.navigation.mainInformation')}
-                    </div>
-                  ) : (
-                    '01'
-                  )}
+                  <div className="item">
+                    <div className="redDot" />
+                    {t('geoPhysics.navigation.mainInformation')}
+                  </div>
                 </div>
                 <div
                   onClick={() => setNav(2)}
                   className={nav === 2 ? 'navInfoItemActive' : 'navInfoItem'}
                 >
-                  {nav === 2 ? (
-                    <div className="item">
-                      <div className="redDot" />
-                      {t('geoPhysics.navigation.technicalFeatures')}
-                    </div>
-                  ) : (
-                    '02'
-                  )}
+                  <div className="item">
+                    <div className="redDot" />
+                    {t('geoPhysics.navigation.technicalFeatures')}
+                  </div>
                 </div>
                 <div
                   onClick={() => setNav(3)}
                   className={nav === 3 ? 'navInfoItemActive' : 'navInfoItem'}
                 >
-                  {nav === 3 ? (
-                    <div className="item">
-                      <div className="redDot" />
-                      {t('geoPhysics.navigation.specifications')}
-                    </div>
-                  ) : (
-                    '03'
-                  )}
-                </div>
-                <div
-                  onClick={() => setNav(4)}
-                  className={nav === 4 ? 'navInfoItemActive' : 'navInfoItem'}
-                >
-                  {nav === 4 ? (
-                    <div className="item">
-                      <div className="redDot" />
-                      {t('geoPhysics.navigation.specifications')}
-                    </div>
-                  ) : (
-                    '04'
-                  )}
+                  <div className="item">
+                    <div className="redDot" />
+                    {t('geoPhysics.navigation.specifications')}
+                  </div>
                 </div>
               </div>
               <div className="infoContent">
@@ -121,60 +96,82 @@ const SkidMountedUnit = () => {
                 )}
                 {nav === 2 && (
                   <>
-                    <div className="techCharText2">
-                      <span>
-                        {t('geoPhysics.skidMountedUnit.techChar.title1')}
-                      </span>
-                      <br />
-                      <div className="mainText">
-                        {t('geoPhysics.skidMountedUnit.techChar.text1')}
+                    <>
+                      <div className="techCharText2">
+                        <span>
+                          {t('geoPhysics.skidMountedUnit.techChar.title1')}
+                        </span>
+                        <br />
+                        <div className="mainText">
+                          {t('geoPhysics.skidMountedUnit.techChar.text1')}
+                        </div>
                       </div>
-                    </div>
-                    <div className="techCharText2">
-                      <span>
-                        {t('geoPhysics.skidMountedUnit.techChar.title2')}
-                      </span>
-                      <br />
-                      <div className="mainText">
-                        {t('geoPhysics.skidMountedUnit.techChar.text2')}
+                      <div className="techCharText2">
+                        <span>
+                          {t('geoPhysics.skidMountedUnit.techChar.title2')}
+                        </span>
+                        <br />
+                        <div className="mainText">
+                          {t('geoPhysics.skidMountedUnit.techChar.text2')}
+                        </div>
                       </div>
-                    </div>
-                    <div className="techCharText2">
-                      <span>
-                        {t('geoPhysics.skidMountedUnit.techChar.title3')}
-                      </span>
-                      <br />
-                      <div className="mainText">
-                        {t('geoPhysics.skidMountedUnit.techChar.text3')}
+                      <div className="techCharText2">
+                        <span>
+                          {t('geoPhysics.skidMountedUnit.techChar.title3')}
+                        </span>
+                        <br />
+                        <div className="mainText">
+                          {t('geoPhysics.skidMountedUnit.techChar.text3')}
+                        </div>
                       </div>
-                    </div>
-                    <div className="techCharText2">
-                      <span>
-                        {t('geoPhysics.skidMountedUnit.techSpec2.title1')}
-                      </span>
-                      <br />
-                      <div className="mainText">
-                        {t('geoPhysics.skidMountedUnit.techSpec2.text1')}
+                      <div className="techCharText2">
+                        <span>
+                          {t('geoPhysics.skidMountedUnit.techSpec2.title1')}
+                        </span>
+                        <br />
+                        <div className="mainText">
+                          {t('geoPhysics.skidMountedUnit.techSpec2.text1')}
+                        </div>
                       </div>
-                    </div>
-                    <div className="techCharText2">
-                      <span>
-                        {t('geoPhysics.skidMountedUnit.techChar.title4')}
-                      </span>
-                      <br />
-                      <div className="mainText">
-                        {t('geoPhysics.skidMountedUnit.techChar.text4')}
+                      <div className="techCharText2">
+                        <span>
+                          {t('geoPhysics.skidMountedUnit.techChar.title4')}
+                        </span>
+                        <br />
+                        <div className="mainText">
+                          {t('geoPhysics.skidMountedUnit.techChar.text4')}
+                        </div>
                       </div>
-                    </div>
-                    <div className="techCharText2">
-                      <span>
-                        {t('geoPhysics.skidMountedUnit.techSpec2.title2')}
-                      </span>
-                      <br />
-                      <div className="mainText">
-                        {t('geoPhysics.skidMountedUnit.techSpec2.text2')}
+                      <div className="techCharText2">
+                        <span>
+                          {t('geoPhysics.skidMountedUnit.techSpec2.title2')}
+                        </span>
+                        <br />
+                        <div className="mainText">
+                          {t('geoPhysics.skidMountedUnit.techSpec2.text2')}
+                        </div>
                       </div>
-                    </div>
+                    </>
+                    <>
+                      <div className="techCharText2">
+                        <span>
+                          {t('geoPhysics.skidMountedUnit.techSpec2.title1')}
+                        </span>
+                        <br />
+                        <div className="mainText">
+                          {t('geoPhysics.skidMountedUnit.techSpec2.text1')}
+                        </div>
+                      </div>
+                      <div className="techCharText2">
+                        <span>
+                          {t('geoPhysics.skidMountedUnit.techSpec2.title2')}
+                        </span>
+                        <br />
+                        <div className="mainText">
+                          {t('geoPhysics.skidMountedUnit.techSpec2.text2')}
+                        </div>
+                      </div>
+                    </>
                   </>
                 )}
                 {nav === 3 && (
@@ -267,28 +264,6 @@ const SkidMountedUnit = () => {
                         {t('geoPhysics.skidMountedUnit.techSpec.voidDrum')}
                       </div>
                       <div className="techCharValue">60 kN</div>
-                    </div>
-                  </>
-                )}
-                {nav === 4 && (
-                  <>
-                    <div className="techCharText2">
-                      <span>
-                        {t('geoPhysics.skidMountedUnit.techSpec2.title1')}
-                      </span>
-                      <br />
-                      <div className="mainText">
-                        {t('geoPhysics.skidMountedUnit.techSpec2.text1')}
-                      </div>
-                    </div>
-                    <div className="techCharText2">
-                      <span>
-                        {t('geoPhysics.skidMountedUnit.techSpec2.title2')}
-                      </span>
-                      <br />
-                      <div className="mainText">
-                        {t('geoPhysics.skidMountedUnit.techSpec2.text2')}
-                      </div>
                     </div>
                   </>
                 )}

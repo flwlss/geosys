@@ -31,9 +31,10 @@ const Geophycis = () => {
               />
               <Button
                 text={t('geoPhysics.main.button')}
-                onClick={() => {
-                  openModal();
-                }}
+                onClick={() => navigate('/geophysics/loggingTrack')}
+                // onClick={() => {
+                //   openModal();
+                // }}
               />
             </div>
             <div className="geophysics__content__wrapper__item">
@@ -44,9 +45,10 @@ const Geophycis = () => {
               />
               <Button
                 text={t('geoPhysics.main.button')}
-                onClick={() => {
-                  openModal();
-                }}
+                // onClick={() => {
+                //   openModal();
+                // }}
+                onClick={() => navigate('/geophysics/loggingTrack')}
               />
             </div>
           </div>
