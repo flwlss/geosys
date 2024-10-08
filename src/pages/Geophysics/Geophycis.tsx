@@ -14,7 +14,7 @@ const Geophycis = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
 
-  const { isOpen, openModal, closeModal } = useModal();
+  const { isOpen, closeModal } = useModal();
   return (
     <div className="geophysics">
       <Number3 className="geophysics__number" />
@@ -32,9 +32,6 @@ const Geophycis = () => {
               <Button
                 text={t('geoPhysics.main.button')}
                 onClick={() => navigate('/geophysics/loggingTrack')}
-                // onClick={() => {
-                //   openModal();
-                // }}
               />
             </div>
             <div className="geophysics__content__wrapper__item">
@@ -45,9 +42,6 @@ const Geophycis = () => {
               />
               <Button
                 text={t('geoPhysics.main.button')}
-                // onClick={() => {
-                //   openModal();
-                // }}
                 onClick={() => navigate('/geophysics/loggingTrack')}
               />
             </div>
