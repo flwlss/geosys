@@ -119,7 +119,10 @@ const Modal: React.FC<Props> = ({ closeModal }) => {
                 ))}
               </div>
             </div>
-
+            <div className="politicsContainer">
+              <input type="checkbox" />
+              <div className="politic">{t('contacts.politic')} </div>
+            </div>
             <button>{t('contacts.send')}</button>
           </div>
         </div>

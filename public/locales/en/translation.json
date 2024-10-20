@@ -10,7 +10,8 @@
     "message": "Text",
     "agree": "I agree to receive informational messages and the processing of personal data for informational purposes",
     "uploadFiles": "Upload files",
-    "invalidFiles": "Acceptable file formats for sending: .doc, .docx, .pdf"
+    "invalidFiles": "Acceptable file formats for sending: .doc, .docx, .pdf",
+    "politic": "I hereby confirm that I have read and agree to the terms of the privacy policy and give my consent to the processing of my personal data and to receiving informational messages."
   },
   "navbar": {
     "main": "Main",
@@ -27,7 +28,7 @@
   },
   "aboutPage": {
     "startLeftText": "",
-    "endLeftText": " is the leading manufacturer of measuring and logging trucks, geophysical equipment and special purpose vehicles.\n\nThe establishment of Geo Sys became a natural continuation of the longstanding tradition of geophysical instrumentation manufacturing in Germany.The company specializes in manufacturing mobile logging trucks on commercial truck chassis, stationary logging units based on shipping containers, geophysical measuring devices and modular logging units.\n\nGeo Sys is successfully expanding its market presence. Due to years of work and accumulated experience, Geo Sys brand has become well-known in Europe, Transcaucasia, Central Asia and the Middle East.",
+    "endLeftText": " is the leading manufacturer of measuring and logging trucks, geophysical equipment and special purpose vehicles.\n\nThe establishment of Geo Sys became a natural continuation of the longstanding tradition of geophysical instrumentation manufacturing in Germany. The company specializes in manufacturing mobile logging trucks on commercial truck chassis, stationary logging units based on shipping containers, geophysical measuring devices and modular logging units.\n\nGeo Sys is successfully expanding its market presence. Due to years of work and accumulated experience, Geo Sys brand has become well-known in Europe, Transcaucasia, Central Asia and the Middle East.",
     "rightText": "The German company Geo Sys GmbH was established in 1990 in Leipzig, formerly a subsidiary of VEB Geophysik Leipzig, the largest GDR organization specializing in geophysical exploration of mineral deposits in East Germany.\n\nNowadays, Geo Sys products are deservedly considered a standard of quality and associated with uniqueness, expertise, and technological innovation in the production of machinery, equipment, and devices f or the oil and gas industry.\n\nDue to the expansion of activities and development of the sales geography of our products, the company’s key production facilities are located at GEO SYS Middle East in Dubai, United Arab Emirates."
   },
   "specialEquipmentPage": {
@@ -148,7 +149,7 @@
       "techChar2": {
         "title1": "Safety and maintenance",
         "text1": "• Direct-driven  hydraulic winch (without chains and gear-down mechanisms)\n• Hydraulic driven brakes\n• Automatic cable layer\n• Cable lubrication system\n• Drip pan assembled under the winch\n• Transport niches and equipment for measuring instruments\n• Black box which records each second or minute the cable speed, tension, depth, date and time",
-        "title2": "Depth computer", 
+        "title2": "Depth computer",
         "text2": "• Depth indicator in meters or feet\n• Tension indicator in kN or lbf\n• Speed indicator in m/h or fpm\n• Automatic winch drive with pre-set speed (constant speed, independent full or empty drum)\n• Automatic  shutdown in case of exceeding max. tension\n• Automatic shutdown in case of exceeding min./max. depth\n• Automatic shutdown in case of cable loops formation threat \n• Integrated function for depth and tension calibration",
         "title3": "Logging truck for logging operations in horizontal wells.",
         "text3": "A specialized measuring cable with a diameter of 21–32 mm is used for data transmission and power supply. Its special outer steel armour enables the transportation of the instruments."

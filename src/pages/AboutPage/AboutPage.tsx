@@ -16,7 +16,7 @@ const AboutPage = () => {
           <div className="about__textWrapper">
             <p className="about__textWrapper__leftText">
               {t('aboutPage.startLeftText')}
-              <span> Geo Sys</span>
+              <span>Geo Sys</span>
               {t('aboutPage.endLeftText')}
             </p>
             <p className="about__textWrapper__rightText">

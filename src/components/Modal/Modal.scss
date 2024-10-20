@@ -26,6 +26,13 @@
     @include responsive-size(padding-right, 16px, 40px, 40px, 40px, 40px);
     @include responsive-size(padding-left, 16px, 40px, 40px, 40px, 40px);
 
+    @media (max-width: 370px) {
+      padding-top: 20px;
+      overflow: auto;
+      height: 100%;
+      width: 100%;
+    }
+
     .fileUpload {
       margin-top: 20px;
       border-bottom: 1px solid #cacaca;
@@ -90,6 +97,19 @@
       }
     }
 
+    .politicsContainer {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      input {
+        width: 25px;
+        height: 25px;
+      }
+      .politic {
+        font-size: 12px;
+      }
+    }
+
     .close {
       @include responsive-size(right, 20px, 40px, 40px, 40px, 40px);
       @include responsive-size(top, 20px, 40px, 40px, 40px, 40px);
@@ -101,6 +121,9 @@
       text-align: center;
       white-space: pre-line;
       font-size: 24px;
+      @media (max-width: 370px) {
+        font-size: 22px;
+      }
     }
 
     .inputsWrapper {
