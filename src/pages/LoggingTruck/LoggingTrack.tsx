@@ -259,9 +259,6 @@ const LoggingTruck = () => {
                       </div>
                       <div className="techCharValue">60 kN</div>
                     </div>
-                    <div className="techSpec1">
-                      {t('geoPhysics.loggingTrack.techSpec.drumWork')}
-                    </div>
                   </>
                 )}
               </div>
