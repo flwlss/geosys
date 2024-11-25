@@ -57,7 +57,7 @@ const Navbar = () => {
             </p>
             <p
               className={
-                location.pathname.includes('equipment')
+                location.pathname.includes('special-equipment')
                   ? 'navbar__items__activeItem'
                   : ''
               }
@@ -66,6 +66,18 @@ const Navbar = () => {
               }}
             >
               {t('navbar.supply')}
+            </p>
+            <p
+              className={
+                location.pathname.includes('/ground-support-equipment')
+                  ? 'navbar__items__activeItem'
+                  : ''
+              }
+              onClick={() => {
+                navigate(PATHS.GROUNDSUPPORT);
+              }}
+            >
+              {t('navbar.gse')}
             </p>
             <p
               className={
@@ -90,7 +102,7 @@ const Navbar = () => {
               onClick={() => {
                 if (window.innerWidth < 1440 && window.innerWidth >= 1024) {
                   setShowUnderMenu(!showUnderMenu);
-                } else if (window.innerWidth < 1024 && window.innerWidth >= 0) {
+                } else if (window.innerWidth < 1440 && window.innerWidth >= 0) {
                   setShowMobileMenu(true);
                 }
               }}
@@ -129,7 +141,7 @@ const Navbar = () => {
           </p>
           <p
             className={
-              location.pathname.includes('equipment')
+              location.pathname.includes('special-equipment')
                 ? 'navbar__underMenu__activeItem'
                 : ''
             }
@@ -138,6 +150,18 @@ const Navbar = () => {
             }}
           >
             {t('navbar.supply')}
+          </p>
+          <p
+            className={
+              location.pathname.includes('/ground-support-equipment')
+                ? 'navbar__underMenu__activeItem'
+                : ''
+            }
+            onClick={() => {
+              navigate(PATHS.GROUNDSUPPORT);
+            }}
+          >
+            {t('navbar.gse')}
           </p>
           <p
             className={

@@ -76,7 +76,7 @@ const MobileMenu = ({ closeMenu }: MobileMenuProps) => {
           </p>
           <p
             className={
-              location.pathname.includes('equipment')
+              location.pathname.includes('special-equipment')
                 ? 'menu__items__activeItem'
                 : ''
             }
@@ -86,6 +86,18 @@ const MobileMenu = ({ closeMenu }: MobileMenuProps) => {
             }}
           >
             {t('navbar.supply')}
+          </p>
+          <p
+            className={
+              location.pathname.includes('ground-support-equipment')
+                ? 'menu__items__activeItem'
+                : ''
+            }
+            onClick={() => {
+              navigate(PATHS.GROUNDSUPPORT);
+            }}
+          >
+            {t('navbar.gse')}
           </p>
           <p
             className={
