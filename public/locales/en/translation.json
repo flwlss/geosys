@@ -100,15 +100,15 @@
   "gse": {
     "tab1": {
       "title": "SUPPLY OF SPECIAL EQUIPMENT",
-      "text": "Geo Sys ME specializes in the supply of ground-based aviation vehicles and civil aircraft maintenance equipment.\n\nThe equipment supplied by Geo Sys ME complies with the accepted international quality standards and meets the high requirements of the modern aviation services market.\n\nFor our customers, we are ready to deliver the following types of equipment in the shortest possible time:\n\n- Push-back tractors\n- Towbarless tractors\n- Ambulifts and catering trucks\n- Self-propelled and towable stairs\n- Apron buses\n- Deicers\n- Baggage tractors\n- Nitrogen refuelers and oxygen refuelers\n- Toilet servicers\n- Air Start Units (ASU)\n- Ground Power Units (GPU), Cabin heaters\n- Air Conditioning Units (ACU), Fuelers converters\n- Potable water servicers\n- Container and pallets transporters\n- Container and pallet loaders\n- Container and baggage carts\n- Compact brush blowers and vacuum sweepers\n- Towable brush blowers\n- Special chassis\n- Airfield lights cleaning equipment\n- Airfield fire-fighting vehicles and other special equipment ground support"
+      "text": "Geo Sys ME specializes in the supply of ground-based aviation vehicles and civil aircraft maintenance equipment.\n\nThe equipment supplied by Geo Sys ME complies with the accepted international quality standards and meets the high requirements of the modern aviation services market.\n\nFor our customers, we are ready to deliver the following types of equipment in the shortest possible time:\n\n• Push-back tractors\n• Towbarless tractors\n• Ambulifts and catering trucks\n• Self-propelled and towable stairs\n• Apron buses\n• Deicers\n• Baggage tractors\n• Nitrogen refuelers and oxygen refuelers\n• Toilet servicers\n• Air Start Units (ASU)\n• Ground Power Units (GPU), Cabin heaters\n• Air Conditioning Units (ACU), Fuelers converters\n• Potable water servicers\n• Container and pallets transporters\n• Container and pallet loaders\n• Container and baggage carts\n• Compact brush blowers and vacuum sweepers\n• Towable brush blowers\n• Special chassis\n• Airfield lights cleaning equipment\n• Airfield fire-fighting vehicles and other special equipment ground support"
     },
     "tab2": {
       "title": "SERVICE MAINTENANCE",
-      "text": "Highly qualified personnel of Geo Sys ME performs service and maintenance of all types of airport special equipment with high quality:\n\n- Maintenance\n- Installation of additional equipment at the customer's request\n- Commissioning\n- Complex repair works with elements of restoration of units and assemblies\n- Supply of spare parts and consumables\n- Diagnostics and repair of engines, starters, high pressure fuel pumps, axles, hydraulics, automatic transmission, etc."
+      "text": "Highly qualified personnel of Geo Sys ME performs service and maintenance of all types of airport special equipment with high quality:\n\n• Maintenance\n• Installation of additional equipment at the customer's request\n• Commissioning\n• Complex repair works with elements of restoration of units and assemblies\n• Supply of spare parts and consumables\n• Diagnostics and repair of engines, starters, high pressure fuel pumps, axles, hydraulics, automatic transmission, etc."
     },
     "tab3": {
       "title": "RENTAL OF SPECIAL MACHINERY AND EQUIPMENT",
-      "text": "Geo Sys ME provides services for rental of aviation special equipment and civil ground-based aircraft support equipment.\n\nFor our customers we are ready to provide the following types of machinery and equipment for rent:\n\n- Push-back tractors\n- Towbarless tractors\n- Ambulifts and catering trucks\n- Self-propelled and towable stairs\n- Apron buses\n- Deicers\n- Baggage tractors\n- Nitrogen refuelers and oxygen refuelers\n- Toilet servicers\n- Air Start Units (ASU)\n- Ground Power Units (GPU), Cabin heaters\n- Air Conditioning Units (ACU), Fuelers, converters\n- Potable water servicers\n- Container and pallets transporters\n- Container and pallet loaders\n- Container and baggage carts\n- Compact brush blowers and vacuum sweepers\n- Towable brush blowers\n- Special chassis\n- Airfield lights cleaning equipment\n- Airfield fire-fighting vehicles and other special equipment ground support"
+      "text": "Geo Sys ME provides services for rental of aviation special equipment and civil ground-based aircraft support equipment.\n\nFor our customers we are ready to provide the following types of machinery and equipment for rent:\n\n• Push-back tractors\n• Towbarless tractors\n• Ambulifts and catering trucks\n• Self-propelled and towable stairs\n• Apron buses\n• Deicers\n• Baggage tractors\n• Nitrogen refuelers and oxygen refuelers\n• Toilet servicers\n• Air Start Units (ASU)\n• Ground Power Units (GPU), Cabin heaters\n• Air Conditioning Units (ACU), Fuelers, converters\n• Potable water servicers\n• Container and pallets transporters\n• Container and pallet loaders\n• Container and baggage carts\n• Compact brush blowers and vacuum sweepers\n• Towable brush blowers\n• Special chassis\n• Airfield lights cleaning equipment\n• Airfield fire-fighting vehicles and other special equipment ground support"
     },
     "tab4": {
       "title": "SUPPLY OF SPARE PARTS AND CONSUMABLES",
@@ -116,7 +116,7 @@
     },
     "tab5": {
       "title": "OVERHAUL",
-      "text": "Geo Sys ME provides overhaul and refurbishment services for special airfield equipment.\n\nWe have everything necessary for overhaul at our disposal: many years of experience with special equipment, qualified employees, repair bases, diagnostic equipment, special tools, original spare parts, technical documentation, etc.\n\nList of works performed:\n\n- Diagnosis\n- Troubleshooting\n- Refurbishment program development\n- Transportation of machines to and from the place of repair works\n- Efficient and high-quality repair of special equipment\n- Warranty"
+      "text": "Geo Sys ME provides overhaul and refurbishment services for special airfield equipment.\n\nWe have everything necessary for overhaul at our disposal: many years of experience with special equipment, qualified employees, repair bases, diagnostic equipment, special tools, original spare parts, technical documentation, etc.\n\nList of works performed:\n\n• Diagnosis\n• Troubleshooting\n• Refurbishment program development\n• Transportation of machines to and from the place of repair works\n• Efficient and high-quality repair of special equipment\n• Warranty"
     }
   },
   "geoPhysics": {
@@ -127,7 +127,7 @@
       "title2": "SKID-MOUNTED UNIT",
       "title2noCaps": "SKID-MOUNTED UNIT",
       "button": "Learn more",
-      "button2": "Contact Us to Purchase"
+      "button2": "Submit your request"
     },
     "navigation": {
       "mainInformation": "Main information",
