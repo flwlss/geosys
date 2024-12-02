@@ -42,7 +42,7 @@ const Geophycis = () => {
               />
               <Button
                 text={t('geoPhysics.main.button')}
-                onClick={() => navigate('/geophysics/loggingTrack')}
+                onClick={() => navigate('/geophysics/skidMountedUnit')}
               />
             </div>
           </div>
