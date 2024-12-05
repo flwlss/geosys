@@ -9,6 +9,7 @@ import Geophycis from '../pages/Geophysics/Geophycis';
 import LoggingTruck from '../pages/LoggingTruck/LoggingTrack';
 import SkidMountedUnit from '../pages/SkidMountedUnit/SkidMountedUnit';
 import GroundSupport from '../pages/GroundSupport/GroundSupport';
+import Tools from '../pages/Tools/Tools';
 
 const Router = () => {
   return (
@@ -19,7 +20,8 @@ const Router = () => {
       <Route path={PATHS.SPECIAL_EQUIPMENT} element={<SpecialEquipment />} />
       <Route path={PATHS.EQUIPMENT} element={<Equipment />} />
       <Route path={PATHS.GROUNDSUPPORT} element={<GroundSupport />} />
-      <Route path={PATHS.CONTACTS} element={<Contacts />} />
+      <Route path={PATHS.CONTACTS} element={<Contacts />} />{' '}
+      <Route path={PATHS.TOOLS} element={<Tools />} />
       <Route path={PATHS.GEOPHYSICS} element={<Geophycis />} />
       <Route path={PATHS.GEOPHYSICS_LOGGING_TRACK} element={<LoggingTruck />} />
       <Route

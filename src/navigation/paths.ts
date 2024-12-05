@@ -6,6 +6,7 @@ export const PATHS = {
   CONTACTS: '/contacts',
   GEOPHYSICS: '/geophysics',
   GROUNDSUPPORT: '/ground-support-equipment',
+  TOOLS: '/geophysics/tools',
   GEOPHYSICS_LOGGING_TRACK: '/geophysics/loggingTrack',
   GEOPHYSICS_SKID_MOUNTED_UNIT: '/geophysics/skidMountedUnit',
 };

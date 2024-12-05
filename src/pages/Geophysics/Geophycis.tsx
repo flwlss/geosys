@@ -3,6 +3,7 @@ import Marker from '../../components/Marker/Marker';
 import './Geophysics.scss';
 import logginTruck from '../../assets/images/loggingTruck.jpg';
 import skidMountedUnit from '../../assets/images/skidMountedUnit.jpg';
+import eqipment from '../../assets/images/equipment.jpg';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useModal } from '../../common/helpers';
@@ -24,7 +25,9 @@ const Geophycis = () => {
           <Marker title={t('geoPhysics.main.marker')} />
           <div className="geophysics__content__wrapper">
             <div className="geophysics__content__wrapper__item">
-              {t('geoPhysics.main.title1')}
+              <span style={{ height: '44px' }}>
+                {t('geoPhysics.main.title1')}
+              </span>
               <img
                 onClick={() => navigate('/geophysics/loggingTrack')}
                 src={logginTruck}
@@ -35,7 +38,9 @@ const Geophycis = () => {
               />
             </div>
             <div className="geophysics__content__wrapper__item">
-              {t('geoPhysics.main.title2')}
+              <span style={{ height: '44px' }}>
+                {t('geoPhysics.main.title2')}{' '}
+              </span>
               <img
                 onClick={() => navigate('/geophysics/skidMountedUnit')}
                 src={skidMountedUnit}
@@ -43,6 +48,19 @@ const Geophycis = () => {
               <Button
                 text={t('geoPhysics.main.button')}
                 onClick={() => navigate('/geophysics/skidMountedUnit')}
+              />
+            </div>
+            <div className="geophysics__content__wrapper__item">
+              <span style={{ height: '44px', fontStyle: 'italic' }}>
+                {t('geoPhysics.main.title3')}{' '}
+              </span>
+              <img
+                onClick={() => navigate('/geophysics/tools')}
+                src={eqipment}
+              />
+              <Button
+                text={t('geoPhysics.main.button')}
+                onClick={() => navigate('/geophysics/tools')}
               />
             </div>
           </div>

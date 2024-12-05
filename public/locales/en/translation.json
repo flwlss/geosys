@@ -126,6 +126,8 @@
       "title1noCaps": "LOGGING TRUCK",
       "title2": "SKID-MOUNTED UNIT",
       "title2noCaps": "SKID-MOUNTED UNIT",
+      "title3": "Equipment, logging tools and spare parts",
+      "title3noCaps": "Equipment, logging tools and spare parts",
       "button": "Learn more",
       "button2": "Submit your request"
     },
@@ -217,6 +219,9 @@
         "title2": "Depth computer",
         "text2": "• Depth indicator in meters or feet\n• Tension indicator in kN or lbf\n• Speed indicator in m/h or fpm\n• Automatic winch operation mode with pre-set speed (constant speed regardless of the full or empty drum\n• Automatic shutdown in case of exceeding max. tension\n• Automatic shutdown in case of exceeding min./max.depth \n• Automatic shutdown in case of cable loops formation threatIntegrated function for depth and tension calibration"
       }
+    },
+    "tools": {
+      "text1": "We produce and supply the equipment for geological and engineering survey according to individual customer requests and technical specifications"
     }
   }
 }
