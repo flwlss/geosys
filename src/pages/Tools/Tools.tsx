@@ -1,10 +1,7 @@
 import Container from '../../components/Container/Container';
-
 import './Tools.scss';
 import tools2 from '../../assets/images/tools2.png';
-
 import Back from '/src/assets/images/icons/back.svg?react';
-
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';

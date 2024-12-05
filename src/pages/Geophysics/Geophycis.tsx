@@ -51,7 +51,7 @@ const Geophycis = () => {
               />
             </div>
             <div className="geophysics__content__wrapper__item">
-              <span style={{ height: '44px', fontStyle: 'italic' }}>
+              <span style={{ height: '44px' }}>
                 {t('geoPhysics.main.title3')}{' '}
               </span>
               <img
